@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Heavy Weight */
+@font-face {
+	font-family: 'VisbyCF Heavy';
+	src: url('../fonts/VisbyCF/visbycf-heavy.woff2') format('woff2'),
+		url('../fonts/VisbyCF/visbycf-heavy.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	font-display: auto;
+}
+
+/* Bold Weight */
+@font-face {
+	font-family: 'VisbyCF Bold';
+	src: url('../fonts/VisbyCF/visbycf-bold.woff2') format('woff2'),
+		url('../fonts/VisbyCF/visbycf-bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: auto;
+}
+
+/* Semibold Weight */
+@font-face {
+	font-family: 'VisbyCF Semibold';
+	src: url('../fonts/VisbyCF/visbycf-semibold.woff2') format('woff2'),
+		url('../fonts/VisbyCF/visbycf-semibold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
+/* Medium Weight */
+@font-face {
+	font-family: 'VisbyCF Medium';
+	src: url('../fonts/VisbyCF/visbycf-medium.woff2') format('woff2'),
+		url('../fonts/VisbyCF/visbycf-medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+/* 
+Colour 
+*/
+:root {
+	--accent-color: hsl(23, 100%, 52%);
+	--secondary-light-orange: hsl(23, 100%, 72%);
+	--secondary-dark-orange: hsl(23, 100%, 44%);
+	--primary-color: hsl(224, 35%, 24%);
+	--primary-secondary: hsl(252, 100%, 98%);
+	--eerieblack: hsl(221, 37%, 10%);
+}
+
+/* 
+Typography 
+*/
+body {
+	font-family: 'VisbyCF Medium', ui-sans-serif, system-ui, -apple-system,
+		BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+		sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+		'Noto Color Emoji';
+	color: hsl(224, 35%, 24%);
+	overflow-x: hidden;
+}
+.gradient {
+	background-image: linear-gradient(
+		to right,
+		rgba(255, 0, 0, 0),
+		rgba(255, 255, 255, 255)
+	);
+}
+@layer utilities {
+	.lightsilver {
+		border-color: rgba(214, 214, 214, 1);
+		color: rgba(214, 214, 214, 1);
+	}
+
+	.green {
+		border-color: rgba(101, 191, 115, 1);
+		color: rgba(101, 191, 115, 1);
+	}
+
+	.spaceodet {
+		border-color: var(--primary-color);
+		color: var(--primary-color);
+	}
+	.bgspaceodet {
+		background-color: var(--primary-color);
+	}
+	button.bgspaceodet:hover {
+		background-color: var(--primary-secondary);
+		color: var(--primary-color);
+	}
+	button.bgspaceodet:active {
+		background-color: var(--primary-secondary);
+		color: var(--eerieblack);
+	}
+	a.bgspaceodet:hover {
+		background-color: var(--primary-secondary);
+		color: var(--primary-color);
+	}
+	a.bgspaceodet:active {
+		background-color: var(--primary-secondary);
+		color: var(--eerieblack);
+		border-color: var(--eerieblack);
+		border-radius: 2px;
+	}
+	.bgblazeorange {
+		background-color: var(--accent-color);
+	}
+	button.bgblazeorange:hover {
+		background-color: var(--secondary-light-orange);
+	}
+	button.bgblazeorange:active {
+		background-color: var(--secondary-dark-orange);
+	}
+
+	.texteerieblack {
+		color: var(--eerieblack);
+	}
+
+	.primarycolor {
+		color: var(--primary-color);
+	}
+
+	.accentcolor {
+		color: var(--accent-color);
+	}
+	.accent-border {
+		border-color: var(--accent-color);
+	}
+	button.accent-border:hover {
+		border-color: var(--secondary-light-orange);
+		background-color: var(--primary-secondary);
+		color: var(--secondary-light-orange);
+	}
+	button.accent-border:active{
+		border-color: var(--secondary-dark-orange);
+		background-color: var(--primary-secondary);
+		color: var(--secondary-dark-orange);
+	}
+	.primaryfont {
+		font-family: 'VisbyCF Bold';
+	}
+}
+.cnnContents {
+	width: 100%;
+	padding-top: 20px;
+	margin: 0 auto;
+	font-size: 30px;
+	white-space: nowrap;
+	text-transform: uppercase;
+	font-family: 'Museo';
+	font-weight: 300;
+}
+
+.marqueeStyle {
+	animation: scrolling-left1 10s linear infinite;
+}
+
+.marqueeStyle2 {
+	animation: scrolling-left2 10s linear infinite;
+	animation-delay: 0s;
+}
+
+@keyframes scrolling-left1 {
+	0% {
+		transform: translateX(0%);
+		-webkit-transform: translateX(0%);
+	}
+
+	100% {
+		transform: translateX(-100%);
+		-webkit-transform: translateX(-100%);
+	}
+}
+
+@keyframes scrolling-left2 {
+	0% {
+		transform: translateX(0%);
+		-webkit-transform: translateX(0%);
+	}
+
+	100% {
+		transform: translateX(-100%);
+		-webkit-transform: translateX(-100%);
+	}
+}

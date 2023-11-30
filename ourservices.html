@@ -1,0 +1,872 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hubinit | Our Services</title>
+    <link rel="stylesheet" href="css/tailwindcss.css" />
+    <link rel="stylesheet" href="css/carousel.css"></script>
+    <link rel="stylesheet" href="css/gotothetop.css"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./owl-carousel/owl.carousel.css" />
+    <link rel="stylesheet" href="./owl-carousel/owl.theme.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+
+  <body class="bg-white h-full" style="visibility: visible">
+    <div
+      id="app"
+      class="w-full flex justify-center flex-col items-center textspaceodet overflow-clip"
+      data-v-app=""
+    >
+      <header
+        class="max-w-screen-desktop w-full desktop:px-[112px] tablet:px-[50px] flex flex-col align-middle items-center"
+      >
+        <!-- geater than table let  -->
+        <div
+          id="navbar-main"
+          class="flex flex-row w-full h-20 p-6 align-middle subpixel-antialiased whitespace-nowrap"
+        >
+          <div class="w-1/3">
+            <div
+              class="justify-center align-middle items-center lg:w-32 md:w-28 w-24"
+            >
+              <a
+                href="/"
+                class="router-link-active router-link-exact-active cursor-pointer"
+                aria-current="page"
+                ><img src="images/images/logo2.png"
+              /></a>
+            </div>
+          </div>
+          <div
+            class="w-2/3 justify-end flex flex-row xl:text-xl lg:text-lg md:text-md text-sm font-normal items-center align-middle texteerieblack"
+          >
+            <a
+              href="index.html"
+              class="router-link-active router-link-exact-active accentcolor xl:mx-2 md:mx-1 cursor-pointer xl:p-2 p-1 flex flex-row items-center"
+              aria-current="page"
+            >
+              Home
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5 xl:ml-3 md:ml-1 stroke-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                ></path></svg></a
+            ><a
+              href="aboutus.html"
+              class="xl:mx-2 md:mx-1 cursor-pointer xl:p-2 p-1 flex flex-row"
+            >
+              About us</a
+            ><a
+              href="ourservices.html"
+              class="xl:mx-2 md:mx-1 cursor-pointer xl:p-2 p-1 flex flex-row items-center"
+            >
+              Our services
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5 xl:ml-3 md:ml-1 stroke-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                ></path></svg></a
+            ><a
+              href="blog.html"
+              class="xl:mx-2 md:mx-1 relative cursor-pointer xl:p-2 p-1 flex flex-row items-center"
+            >
+              Blog
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5 xl:ml-3 md:ml-1 stroke-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                ></path>
+              </svg>
+              <div
+                class="absolute cursor-default top-[45px] left-0"
+                style="display: none"
+              >
+                <div
+                  class="rounded-xl texteerieblack bg-gray-100 flex flex-col gap-y-[27px] py-[20px] px-[15px] text-[16px] font-normal"
+                >
+                  <a href="/blog-articles.html" class="cursor-pointer"> Articles </a
+                  ><a href="/blog.html#authors" class="cursor-pointer"> Authors</a>
+                </div>
+              </div></a
+            ><a
+              href="careers.html"
+              class="xl:mx-2 md:mx-1 cursor-pointer xl:p-2 p-1 flex flex-row"
+            >
+              Careers </a
+            ><a
+              href="contactus.html"
+              class="accentcolor xl:mx-2 md:mx-1 cursor-pointer xl:p-2 p-1 flex flex-row"
+            >
+              Contact us</a
+            >
+          </div>
+        </div>
+
+        <!-- mobile navbar -->
+        <div id="navbar-mobile" class="flex relative flex-row w-full h-20 p-6 align-middle subpixel-antialiased whitespace-nowrap shadow-xl" style="display: none;">
+          <button id="mobile-toggle" class="cursor-pointer">
+            <svg id="icon1" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 7.5C3.75 6.80964 4.30964 6.25 5 6.25H25C25.6904 6.25 26.25 6.80964 26.25 7.5C26.25 8.19036 25.6904 8.75 25 8.75H5C4.30964 8.75 3.75 8.19036 3.75 7.5Z" fill="#FF6909"></path>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 15C3.75 14.3096 4.30964 13.75 5 13.75H25C25.6904 13.75 26.25 14.3096 26.25 15C26.25 15.6904 25.6904 16.25 25 16.25H5C4.30964 16.25 3.75 15.6904 3.75 15Z" fill="#FF6909"></path>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 22.5C3.75 21.8096 4.30964 21.25 5 21.25H25C25.6904 21.25 26.25 21.8096 26.25 22.5C26.25 23.1904 25.6904 23.75 25 23.75H5C4.30964 23.75 3.75 23.1904 3.75 22.5Z" fill="#FF6909"></path>
+            </svg>
+            <svg id="icon2" width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6.29289 6.29289C5.90237 6.68342 5.90237 7.31658 6.29289 7.70711L16.2929 17.7071C16.6834 18.0976 17.3166 18.0976 17.7071 17.7071C18.0976 17.3166 18.0976 16.6834 17.7071 16.2929L7.70711 6.29289C7.31658 5.90237 6.68342 5.90237 6.29289 6.29289Z"
+                  fill="#FF6909" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M17.7071 6.29289C18.0976 6.68342 18.0976 7.31658 17.7071 7.70711L7.70711 17.7071C7.31658 18.0976 6.68342 18.0976 6.29289 17.7071C5.90237 17.3166 5.90237 16.6834 6.29289 16.2929L16.2929 6.29289C16.6834 5.90237 17.3166 5.90237 17.7071 6.29289Z"
+                  fill="#FF6909" />
+            </svg>
+          </button>
+          <div id="navbar-collapse" class="absolute top-20 left-0 z-50" style="display: none;">
+            <div class="rounded-xl bg-gray-100 flex flex-col p-5 px-14 text-[16px] font-normal">
+              <a aria-current="page" href="/" class="router-link-active router-link-exact-active accentcolor mb-[32px]">Home </a>
+              <a href="aboutus.html" class="mb-[32px]"> About us</a>
+              <a href="ourservices.html" class="mb-[32px]"> Our services</a>
+              <a href="blog.html" class="mb-[32px]"> Blogs </a>
+              <a href="careers.html" class="mb-[32px]"> Careers </a>
+              <a href="contactus.html" class="mb-[20px]"> Contact us </a>
+            </div>
+          </div>
+          <div class="flex w-full justify-center">
+            <img class="-ml-6" src="./images/images/logo.png"></div>
+        </div>
+      </header>
+
+      <div class="w-full flex flex-col items-center">
+        <div
+          class="max-w-screen-desktop w-full desktop:px-[112px] tablet:px-[50px] flex flex-col align-middle items-center"
+        >
+          <!--Just say the word-->
+          <div
+            class="w-full flex flex-row items-center justify-center p-4 tablet:mt-28 mobile:mt-14 mt-8 grow"
+          >
+            <div
+              class="flex flex-col w-1/2 h-fit justify-center text-left items-center align-middle grow tablet:pl-0 sm:pl-5 pl-2"
+            >
+              <div
+                class="pb-2 w-full desktop:whitespace-nowrap font-bold primaryfont"
+              >
+                <span
+                  class="primarycolor 2xl:text-[80px] xl:text-[60px] lg:text-[text-40px] sm:text-[34px] mobile:text-[24px] text-[20px]"
+                  >Just say the word <br /></span
+                ><span
+                  class="accentcolor primarycolor 2xl:text-[80px] xl:text-[76px] lg:text-[70px] sm:text-[60px] mobile:text-[46px] text-[36px] [word-spacing:-0.25rem]"
+                  >We can do it all!
+                </span>
+              </div>
+              <div
+                class="xl:mt-[50px] lg:mt-10 sm:mt-7 mobile:mt-6 mt-1 p-2 2xl:text-[20px] xl:text-[18px] lg:text-[16px] sm:text-[16px] mobile:text-[12px] text-[8px]"
+              >
+                Lorem ipsum dolor sit amet consectetur. Consectetur mauris nulla
+                tellus ultricies lobortis. Ornare sodales sit arcu nunc eu
+                pellentesque. Purus elit tortor ornare.
+              </div>
+              <div
+                class="xl:mt-[50px] lg:mt-[36px] tablet:mt-[24px] mt-[20px] flex flex-row 2xl:text-[22.5px] xl:text-[20px] lg:text-[18px] tablet:text-[16px] mobile:text-[13px] text-[8px] justify-start w-full whitespace-nowrap"
+              >
+                <button
+                  class="mobile:rounded-2xl rounded-lg bgblazeorange text-white xl:py-[21px] tablet:py-[19px] mobile:py-[18px] py-[10px] 2xl:px-[85px] xl:px-[80px] lg:px-[74px] tablet:px-[70px] sm:px-[68px] mobile:px-[50px] px-[40px]"
+                >
+                  Contact us
+                </button>
+              </div>
+            </div>
+            <div class="relative w-1/2">
+              <img
+                class="w-full tablet::ml-10 ml-4"
+                src="images/images/ourservicesbg1.png"
+              /><img
+                class="w-full absolute tablet:top-[-40px] mobile:top-[-30px] top-[-20px]"
+                src="images/images/ourservices1.png"
+              />
+            </div>
+          </div>
+          <!--Our partners-->
+          <div
+            class="flex relative cnnContents w-full text-lg text-gray-600 justify-around mobile:mt-24 overflow-hidden"
+          >
+            <div class="flex flex-row w-full justify-around marqueeStyle">
+              <img src="images/images/microsoft.png" /><img
+                src="images/images/cisco.png"
+              /><img src="images/images/ibm.png" /><img
+                src="images/images/sap.png"
+              /><img src="images/images/hp.png" /><img
+                src="images/images/microsoft.png"
+              /><img src="images/images/cisco.png" />
+            </div>
+            <div
+              class="flex flex-row w-full justify-around marqueeStyle2 absolute right-[-100%]"
+            >
+              <img src="images/images/microsoft.png" /><img
+                src="images/images/cisco.png"
+              /><img src="images/images/ibm.png" /><img
+                src="images/images/sap.png"
+              /><img src="images/images/hp.png" /><img
+                src="images/images/microsoft.png"
+              /><img src="images/images/cisco.png" />
+            </div>
+          </div>
+          <!--Study cases-->
+          <div
+            class="w-full flex flex-col items-center justify-center 2xl:mt-[130px] mobile:mt-[40px] p-4"
+          >
+            <!--v-if-->
+            <div class="flex flex-row">
+              <img class="w-[55%] h-auto" src="images/images/shoes1.png" />
+              <div
+                class="flex flex-col w-[45%] ml-[50px] items-start align-bottom"
+              >
+                <span
+                  class="2xl:text-[48px] xl:text-[40px] lg:text-[34px] tablet:text-[28px] text-[24px] 2xl:mt-[50px] mt-[25px] font-bold texteerieblack"
+                  >Study case name</span
+                >
+                <div
+                  class="flex flex-row 2xl:mt-[50px] xl:mt-[42px] lg:mt-[34px] tablet:mt-[28px] mt-[25px]"
+                >
+                  <img
+                    class="rounded-full w-[30%] h-fit"
+                    src="images/images/circle.png"
+                  />
+                  <div
+                    class="flex flex-col ml-[20px] 2xl:text-[25px] xl:text-[22px] lg-text[18px] tablet:text-[16px] text-[12px]"
+                  >
+                    <span class="font-bold">Company XYZ</span
+                    ><span>Field of work</span>
+                  </div>
+                </div>
+                <span
+                  class="2xl:mt-[18px] xl:mt-[16px] lg:mt-[14px] tablet:mt-[12px] mt-[9px] 2xl:text-[20px] xl:text-[18px] lg:text-[16px] tablet:text-[12px] text-[9px] texteerieblack"
+                  >Lorem ipsum dolor sit amet consectetur. Gravida est ipsum nam
+                  sed. Velit id tincidunt in. Lorem ipsum dolor sit amet
+                  consectetur. Gravida est ipsumst Lorem ipsum dolor sit amet
+                  consectetur. Gravida est ipsum nam sed. Velit.</span
+                ><button
+                  class="2xl:mt-[50px] xl:mt-[40px] lg:mt-[35px] tablet:mt-[30px] mt-[25px] text-white rounded-xl bgblazeorange 2xl:text-[22px] xl:text-[20px] lg:text-[17px] tablet:text-[14px] text-[11px] 2xl:py-[28px] xl:py-[22px] lg:py-[18px] tablet:py-[16px] py-[13px] 2xl:px-[90px] xl:px-[75px] lg:px-[65px] tablet:px-[55px] px-[45px]"
+                >
+                  See more
+                </button>
+              </div>
+            </div>
+            <div
+              class="grid grid-rows-1 grid-cols-3 sm:gap-[100px] gap-[70px] 2xl:mt-[110px] xl:mt-[80px] lg:mt-[70px] tablet:mt-[60px] mt-[50px]"
+            >
+              <div class="col-span-1 flex flex-col sm:mr-0 mr-[20px]">
+                <img class="w-full" src="images/images/shoes2.png" /><span
+                  class="2xl:text-[48px] xl:text-[40px] lg:text-[34px] tablet:text-[28px] text-[24px] 2xl:mt-[50px] mt-[25px] font-bold texteerieblack"
+                  >Study case name</span
+                >
+                <div
+                  class="flex flex-row 2xl:mt-[50px] xl:mt-[42px] lg:mt-[34px] tablet:mt-[28px] mt-[25px]"
+                >
+                  <img
+                    class="rounded-full w-1/5 h-auto"
+                    src="images/images/circle.png"
+                  />
+                  <div
+                    class="flex flex-col ml-[20px] 2xl:text-[25px] xl:text-[22px] lg-text[18px] tablet:text-[16px] text-[12px]"
+                  >
+                    <span class="font-bold">Company XYZ</span
+                    ><span>Field of work</span>
+                  </div>
+                </div>
+                <span
+                  class="2xl:mt-[18px] xl:mt-[16px] lg:mt-[14px] tablet:mt-[12px] mt-[9px] 2xl:text-[20px] xl:text-[18px] lg:text-[16px] tablet:text-[12px] text-[9px] texteerieblack"
+                  >Lorem ipsum dolor sit amet consectetur...</span
+                ><button
+                  class="2xl:mt-[50px] xl:mt-[40px] lg:mt-[35px] tablet:mt-[30px] mt-[25px] text-white rounded-xl bgblazeorange 2xl:text-[22px] xl:text-[20px] lg:text-[17px] tablet:text-[14px] text-[11px] 2xl:py-[28px] xl:py-[22px] lg:py-[18px] tablet:py-[16px] py-[13px] 2xl:px-[90px] xl:px-[75px] lg:px-[65px] tablet:px-[55px] sm:px-[45px] px-[30px] w-fit"
+                >
+                  See more
+                </button>
+              </div>
+              <div class="col-span-1 flex flex-col sm:mr-0 mr-[20px]">
+                <img class="w-full" src="images/images/shoes2.png" /><span
+                  class="2xl:text-[48px] xl:text-[40px] lg:text-[34px] tablet:text-[28px] text-[24px] 2xl:mt-[50px] mt-[25px] font-bold texteerieblack"
+                  >Study case name</span
+                >
+                <div
+                  class="flex flex-row 2xl:mt-[50px] xl:mt-[42px] lg:mt-[34px] tablet:mt-[28px] mt-[25px]"
+                >
+                  <img
+                    class="rounded-full w-1/5 h-auto"
+                    src="images/images/circle.png"
+                  />
+                  <div
+                    class="flex flex-col ml-[20px] 2xl:text-[25px] xl:text-[22px] lg-text[18px] tablet:text-[16px] text-[12px]"
+                  >
+                    <span class="font-bold">Company XYZ</span
+                    ><span>Field of work</span>
+                  </div>
+                </div>
+                <span
+                  class="2xl:mt-[18px] xl:mt-[16px] lg:mt-[14px] tablet:mt-[12px] mt-[9px] 2xl:text-[20px] xl:text-[18px] lg:text-[16px] tablet:text-[12px] text-[9px] texteerieblack"
+                  >Lorem ipsum dolor sit amet consectetur...</span
+                ><button
+                  class="2xl:mt-[50px] xl:mt-[40px] lg:mt-[35px] tablet:mt-[30px] mt-[25px] text-white rounded-xl bgblazeorange 2xl:text-[22px] xl:text-[20px] lg:text-[17px] tablet:text-[14px] text-[11px] 2xl:py-[28px] xl:py-[22px] lg:py-[18px] tablet:py-[16px] py-[13px] 2xl:px-[90px] xl:px-[75px] lg:px-[65px] tablet:px-[55px] sm:px-[45px] px-[30px] w-fit"
+                >
+                  See more
+                </button>
+              </div>
+              <div class="col-span-1 flex flex-col sm:mr-0 mr-[20px]">
+                <img class="w-full" src="images/images/shoes2.png" /><span
+                  class="2xl:text-[48px] xl:text-[40px] lg:text-[34px] tablet:text-[28px] text-[24px] 2xl:mt-[50px] mt-[25px] font-bold texteerieblack"
+                  >Study case name</span
+                >
+                <div
+                  class="flex flex-row 2xl:mt-[50px] xl:mt-[42px] lg:mt-[34px] tablet:mt-[28px] mt-[25px]"
+                >
+                  <img
+                    class="rounded-full w-1/5 h-auto"
+                    src="images/images/circle.png"
+                  />
+                  <div
+                    class="flex flex-col ml-[20px] 2xl:text-[25px] xl:text-[22px] lg-text[18px] tablet:text-[16px] text-[12px]"
+                  >
+                    <span class="font-bold">Company XYZ</span
+                    ><span>Field of work</span>
+                  </div>
+                </div>
+                <span
+                  class="2xl:mt-[18px] xl:mt-[16px] lg:mt-[14px] tablet:mt-[12px] mt-[9px] 2xl:text-[20px] xl:text-[18px] lg:text-[16px] tablet:text-[12px] text-[9px] texteerieblack"
+                  >Lorem ipsum dolor sit amet consectetur...</span
+                ><button
+                  class="2xl:mt-[50px] xl:mt-[40px] lg:mt-[35px] tablet:mt-[30px] mt-[25px] text-white rounded-xl bgblazeorange 2xl:text-[22px] xl:text-[20px] lg:text-[17px] tablet:text-[14px] text-[11px] 2xl:py-[28px] xl:py-[22px] lg:py-[18px] tablet:py-[16px] py-[13px] 2xl:px-[90px] xl:px-[75px] lg:px-[65px] tablet:px-[55px] sm:px-[45px] px-[30px] w-fit"
+                >
+                  See more
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--v-if--><!--Why hubinit?-->
+          <div
+            class="w-full flex flex-col tablet:mt-[160px] mt-[40px] items-center align-middle p-4"
+          >
+            <div
+              class="2xl:text-[68px] xl:text-[58px] lg:text-[48px] tablet:text-[42px] text-[25px] font-bold primaryfont"
+            >
+              <span>Why</span
+              ><span class="tablet:primarycolor accentcolor">&nbsp;hub</span
+              ><span class="accentcolor">in</span
+              ><span class="tablet:primarycolor accentcolor">it</span
+              ><span>?</span>
+            </div>
+            <div
+              class="mt-[100px] grid tablet:grid-cols-3 grid-rows-1 tablet:gap-[15px] gap-[30px] tablet:px-[0px] sm:px-[80px] mobile:px-[40px] px-[25px]"
+            >
+              <div
+                class="tablet:col-span-1 relative row-span-1 flex tablet:flex-col tablet:justify-end tablet:items-start items-center tablet:align-bottom align-middle justify-between tablet:bg-white bg-gray-100 rounded-xl 2xl:p-[50px] xl:p-[40px] lg:p-[30px] tablet:p-[20px]"
+              >
+                <img class="w-1/5" src="images/images/notes.png" /><span
+                  class="accentcolor 2xl:text-[32px] xl:text-[26px] lg:text-[20px] tablet:text-[16px] sm:text-[26px] mobile:text-[16px] text-[14px] tablet:p-0 sm:p-[40px] p-[24px] font-bold primaryfont tablet:mt-[40px]"
+                  >A step-by-step roadmap system</span
+                ><!--v-if--><span
+                  class="2xl:text-[20px] xl:text-[18px] lg:text-[16px] tablet:text-[14px] text-[10px] mt-[30px]"
+                  >Lorem ipsum dolor sit amet consectetur. Consectetur mauris
+                  nulla tellus ultricies lobortis. Ornare sodales sit arcu nunc
+                  eu pellentesque. Purus elit tortor ornare.</span
+                >
+              </div>
+              <div
+                class="tablet:col-span-1 relative row-span-1 flex tablet:flex-col tablet:justify-end tablet:items-start items-center tablet:align-bottom align-middle justify-between tablet:bg-white bg-gray-100 rounded-xl 2xl:p-[50px] xl:p-[40px] lg:p-[30px] tablet:p-[20px]"
+              >
+                <img
+                  class="tablet:relative absolute tablet:w-[30%] w-[20%]"
+                  src="images/images/rocket.png"
+                /><span
+                  class="accentcolor 2xl:text-[32px] xl:text-[26px] lg:text-[20px] tablet:text-[16px] sm:text-[26px] mobile:text-[16px] text-[14px] tablet:p-0 sm:p-[40px] p-[24px] font-bold primaryfont tablet:mt-[40px] tablet:ml-0 mobile:ml-[100px] ml-[50px]"
+                  >Innovative and comprehensive solutions</span
+                ><span
+                  class="2xl:text-[20px] xl:text-[18px] lg:text-[16px] tablet:text-[14px] text-[10px] mt-[30px]"
+                  >Lorem ipsum dolor sit amet consectetur. Consectetur mauris
+                  nulla tellus ultricies lobortis. Ornare sodales sit arcu nunc
+                  eu pellentesque. Purus elit tortor ornare.</span
+                ><!--v-if-->
+              </div>
+              <div
+                class="tablet:col-span-1 relative row-span-1 flex tablet:flex-col tablet:justify-end tablet:items-start items-center tablet:align-bottom align-middle justify-between tablet:bg-white bg-gray-100 rounded-xl 2xl:p-[50px] xl:p-[40px] lg:p-[30px] tablet:p-[20px]"
+              >
+                <img class="w-[30%]" src=" images/images/man.png" /><span
+                  class="accentcolor 2xl:text-[32px] xl:text-[26px] lg:text-[20px] tablet:text-[16px] sm:text-[26px] mobile:text-[16px] text-[14px] tablet:p-0 sm:p-[40px] p-[24px] font-bold primaryfont tablet:mt-[40px]"
+                  >Passionate experts</span
+                ><!--v-if--><span
+                  class="2xl:text-[20px] xl:text-[18px] lg:text-[16px] tablet:text-[14px] text-[10px] mt-[30px]"
+                  >Lorem ipsum dolor sit amet consectetur. Consectetur mauris
+                  nulla tellus ultricies lobortis. Ornare sodales sit arcu nunc
+                  eu pellentesque. Purus elit tortor ornare.</span
+                ><!--v-if-->
+              </div>
+            </div>
+          </div>
+          <!--How does it work?-->
+          <div
+            class="w-full flex flex-col mt-[130px] items-center align-middle p-4"
+          >
+            <span
+              class="2xl:text-[68px] tablet:text-[52px] text-[25px] font-bold primaryfont"
+              >How does it work?</span
+            ><span
+              class="mt-[40px] tablet:text-[20px] mobile:text-[16px] text-[8px] px-[80px] texteerieblack tablet:text-left text-center"
+              >Lorem ipsum dolor sit amet consectetur. Consectetur mauris nulla
+              tellus ultricies lobortis. Ornare sodales sit arcu nunc eu
+              pellentesque. Purus elit tortor ornare.</span
+            >
+            <div
+              class="bg-gray-100 mt-[60px] rounded-xl flex w-full h-[400px] px-[96px] py-[84px]"
+            >
+              <div
+                class="w-1/2 relative border-dashed border-b-4 border-l-4 h-full spaceodet mr-[4px]"
+              >
+                <div
+                  class="absolute top-[-18%] left-[-7%] bgspaceodet text-white text-[18px] items-center align-middle px-[20px] py-[24px] flex rounded-2xl"
+                >
+                  <div class="relative flex">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.29292 0.292919C0.560752 0.025088 0.956919 -0.0684348 1.31625 0.0513445L19.3162 6.05133C19.7412 6.19299 20.0201 6.6 19.9989 7.04747C19.9776 7.49494 19.6614 7.87367 19.2249 7.9744L10.0839 10.0839L7.97441 19.2249C7.87367 19.6614 7.49494 19.9776 7.04747 19.9989C6.60001 20.0201 6.193 19.7412 6.05133 19.3162L0.0513438 1.31625C-0.0684343 0.956918 0.025088 0.560751 0.29292 0.292919ZM6.8248 15.3121L8.27562 9.02515C8.36161 8.65255 8.65255 8.36161 9.02515 8.27562L15.3121 6.82479L2.58116 2.58116L6.8248 15.3121Z"
+                        fill="white"
+                      ></path>
+                      </svg><span class="ml-[15px]">Your Dreams</span>
+                  </div>
+                </div>
+                <div class="absolute bottom-[-16%] right-[20%]">
+                  <div
+                    class="relative bgspaceodet text-white text-[18px] items-center align-middle px-[20px] py-[24px] flex rounded-2xl"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 9.44772 18.4477 9 19 9C19.5523 9 20 9.44772 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 2.41411e-07 15.5228 0 10C-1.11925e-07 7.43946 0.963673 5.10161 2.54655 3.33309C2.91487 2.92156 3.54707 2.88654 3.95859 3.25487C4.37012 3.62319 4.40514 4.25539 4.03682 4.66692C2.76945 6.08293 2 7.95042 2 10Z"
+                        fill="white"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M6 10C6 12.2091 7.79086 14 10 14C12.2091 14 14 12.2091 14 10C14 9.44772 14.4477 9 15 9C15.5523 9 16 9.44772 16 10C16 13.3137 13.3137 16 10 16C6.68629 16 4 13.3137 4 10C4 8.32178 4.69032 6.80298 5.79996 5.71519C6.19434 5.32856 6.82748 5.33485 7.2141 5.72924C7.60072 6.12363 7.59443 6.75676 7.20004 7.14339C6.45831 7.87052 6 8.88083 6 10Z"
+                        fill="white"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M9.5073 10.8702C9.0912 10.6346 8.90011 10.1374 9.05132 9.68378L12.0513 0.683777C12.1499 0.388099 12.3807 0.15528 12.6755 0.0541316C12.9703 -0.047017 13.2954 -0.00493038 13.5547 0.167955L16.5547 2.16795C16.7928 2.3267 16.9515 2.57985 16.9906 2.86335C17.0297 3.14685 16.9455 3.43351 16.7593 3.65079L10.7593 10.6508C10.4481 11.0138 9.92341 11.1058 9.5073 10.8702ZM12.563 5.47322L14.5063 3.20606L13.5347 2.5583L12.563 5.47322Z"
+                        fill="white"
+                      ></path>
+                      </svg><span class="ml-[15px]">Project manager</span
+                    ><img
+                      class="absolute w-[22%] top-[-25%] right-[-10%]"
+                      src="images/images/circle2.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="w-1/2 relative border-dashed border-b-4 border-r-4 border-t-4 h-full spaceodet"
+              >
+                <div class="absolute bottom-[-16%] left-[20%]">
+                  <div
+                    class="relative flex bgspaceodet text-white text-[18px] items-center align-middle px-[20px] py-[24px] rounded-2xl"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0 2.22222C0 0.994923 0.994923 0 2.22222 0H6.66667C7.89397 0 8.88889 0.994923 8.88889 2.22222V6.66667C8.88889 7.89397 7.89397 8.88889 6.66667 8.88889H2.22222C0.994923 8.88889 0 7.89397 0 6.66667V2.22222ZM6.66667 2.22222H2.22222V6.66667H6.66667V2.22222Z"
+                        fill="white"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0 13.3333C0 12.106 0.994923 11.1111 2.22222 11.1111H6.66667C7.89397 11.1111 8.88889 12.106 8.88889 13.3333V17.7778C8.88889 19.0051 7.89397 20 6.66667 20H2.22222C0.994923 20 0 19.0051 0 17.7778V13.3333ZM6.66667 13.3333H2.22222V17.7778H6.66667V13.3333Z"
+                        fill="white"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11.1111 2.22222C11.1111 0.994923 12.106 0 13.3333 0H17.7778C19.0051 0 20 0.994923 20 2.22222V6.66667C20 7.89397 19.0051 8.88889 17.7778 8.88889H13.3333C12.106 8.88889 11.1111 7.89397 11.1111 6.66667V2.22222ZM17.7778 2.22222H13.3333V6.66667H17.7778V2.22222Z"
+                        fill="white"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11.1111 13.3333C11.1111 12.106 12.106 11.1111 13.3333 11.1111H17.7778C19.0051 11.1111 20 12.106 20 13.3333V17.7778C20 19.0051 19.0051 20 17.7778 20H13.3333C12.106 20 11.1111 19.0051 11.1111 17.7778V13.3333ZM17.7778 13.3333H13.3333V17.7778H17.7778V13.3333Z"
+                        fill="white"
+                      ></path>
+                      </svg><span class="ml-[15px]">Our Chosen Team</span
+                    ><img
+                      class="absolute w-[25%] top-[-25%] right-[-10%]"
+                      src="images/images/circle3.png"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="absolute top-[-18%] lg:right-[-7%] tablet:right-[-20%]"
+                >
+                  <div
+                    class="relative flex bgspaceodet text-white text-[18px] items-center align-middle px-[20px] py-[24px] rounded-2xl"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.01789 18.0247C2.46422 18.1154 1.97162 18.441 1.70928 18.7049C1.31996 19.0967 0.686794 19.0986 0.295071 18.7093C-0.0966526 18.32 -0.0985991 17.6868 0.290723 17.2951C0.778385 16.8044 1.63578 16.2244 2.69461 16.051C3.81649 15.8672 5.07929 16.1581 6.20928 17.2951C6.87929 17.9692 7.49148 18.0557 7.9821 17.9753C8.53578 17.8846 9.02838 17.559 9.29072 17.2951C9.77838 16.8044 10.6358 16.2244 11.6946 16.051C12.8165 15.8673 14.0793 16.1581 15.2093 17.2951C15.8793 17.9692 16.4915 18.0557 16.9821 17.9753C17.5358 17.8846 18.0284 17.559 18.2907 17.2951C18.68 16.9033 19.3132 16.9014 19.7049 17.2907C20.0967 17.6801 20.0986 18.3132 19.7093 18.7049C19.2216 19.1956 18.3642 19.7756 17.3054 19.949C16.1835 20.1327 14.9207 19.8419 13.7907 18.7049C13.1207 18.0308 12.5085 17.9443 12.0179 18.0247C11.4642 18.1154 10.9716 18.441 10.7093 18.7049C10.2216 19.1956 9.36422 19.7756 8.3054 19.949C7.18352 20.1328 5.92071 19.8419 4.79072 18.7049C4.12071 18.0308 3.50851 17.9443 3.01789 18.0247Z"
+                        fill="white"
+                      ></path>
+                      <path
+                        d="M6 5C6 5.55228 5.55228 6 5 6C4.44772 6 4 5.55228 4 5C4 4.44772 4.44772 4 5 4C5.55228 4 6 4.44772 6 5Z"
+                        fill="white"
+                      ></path>
+                      <path
+                        d="M9 2C9 2.55228 8.55228 3 8 3C7.44772 3 7 2.55228 7 2C7 1.44772 7.44772 1 8 1C8.55228 1 9 1.44772 9 2Z"
+                        fill="white"
+                      ></path>
+                      <path
+                        d="M3 2C3 2.55228 2.55228 3 2 3C1.44772 3 1 2.55228 1 2C1 1.44772 1.44772 1 2 1C2.55228 1 3 1.44772 3 2Z"
+                        fill="white"
+                      ></path>
+                      <path
+                        d="M15 1C15 1.55228 14.5523 2 14 2C13.4477 2 13 1.55228 13 1C13 0.447715 13.4477 0 14 0C14.5523 0 15 0.447715 15 1Z"
+                        fill="white"
+                      ></path>
+                      <path
+                        d="M19 4C19 4.55228 18.5523 5 18 5C17.4477 5 17 4.55228 17 4C17 3.44772 17.4477 3 18 3C18.5523 3 19 3.44772 19 4Z"
+                        fill="white"
+                      ></path>
+                      <path
+                        d="M8 9C8 9.55228 7.55228 10 7 10C6.44772 10 6 9.55228 6 9C6 8.44772 6.44772 8 7 8C7.55228 8 8 8.44772 8 9Z"
+                        fill="white"
+                      ></path>
+                      <path
+                        d="M4 10.5C4 11.3284 3.32843 12 2.5 12C1.67157 12 1 11.3284 1 10.5C1 9.67157 1.67157 9 2.5 9C3.32843 9 4 9.67157 4 10.5Z"
+                        fill="white"
+                      ></path>
+                      <path
+                        d="M8 13C8 13.5523 7.55228 14 7 14C6.44772 14 6 13.5523 6 13C6 12.4477 6.44772 12 7 12C7.55228 12 8 12.4477 8 13Z"
+                        fill="white"
+                      ></path>
+                      <path
+                        d="M12 11C12 11.5523 11.5523 12 11 12C10.4477 12 10 11.5523 10 11C10 10.4477 10.4477 10 11 10C11.5523 10 12 10.4477 12 11Z"
+                        fill="white"
+                      ></path>
+                      <path
+                        d="M17 12.5C17 13.3284 16.3284 14 15.5 14C14.6716 14 14 13.3284 14 12.5C14 11.6716 14.6716 11 15.5 11C16.3284 11 17 11.6716 17 12.5Z"
+                        fill="white"
+                      ></path>
+                      <path
+                        d="M20 9C20 9.55228 19.5523 10 19 10C18.4477 10 18 9.55228 18 9C18 8.44772 18.4477 8 19 8C19.5523 8 20 8.44772 20 9Z"
+                        fill="white"
+                      ></path>
+                      <path
+                        d="M12 5.5C12 6.32843 11.3284 7 10.5 7C9.67157 7 9 6.32843 9 5.5C9 4.67157 9.67157 4 10.5 4C11.3284 4 12 4.67157 12 5.5Z"
+                        fill="white"
+                      ></path>
+                      <path
+                        d="M16 7C16 7.55228 15.5523 8 15 8C14.4477 8 14 7.55228 14 7C14 6.44772 14.4477 6 15 6C15.5523 6 16 6.44772 16 7Z"
+                        fill="white"
+                      ></path>
+                      </svg><span class="ml-[15px]">Qualified Work</span
+                    ><img
+                      class="absolute w-[25%] top-[-25%] right-[-10%]"
+                      src="images/images/circle4.png"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="absolute top-[-18%] lg:left-[-7%] tablet:left-[-20%] bgspaceodet text-white text-[18px] items-center align-middle px-[20px] py-[24px] flex rounded-2xl"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M17.0711 17.0711C16.6806 17.4616 16.0474 17.4616 15.6569 17.0711L2.92899 4.3432C2.53846 3.95267 2.53846 3.31951 2.92899 2.92898C3.31951 2.53846 3.95268 2.53846 4.3432 2.92898L17.0711 15.6569C17.4616 16.0474 17.4616 16.6806 17.0711 17.0711Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M17.0711 2.92888C17.4616 3.3194 17.4616 3.95257 17.0711 4.34309L4.3432 17.071C3.95267 17.4615 3.31951 17.4615 2.92899 17.071C2.53846 16.6805 2.53846 16.0473 2.92899 15.6568L15.6569 2.92888C16.0474 2.53836 16.6806 2.53836 17.0711 2.92888Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20 10C20 10.5523 19.5523 11 19 11L1 11C0.447716 11 -2.41411e-08 10.5523 0 10C2.41411e-08 9.44771 0.447716 9 1 9L19 9C19.5523 9 20 9.44772 20 10Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10 0C10.5523 0 11 0.447715 11 1V19C11 19.5523 10.5523 20 10 20C9.44772 20 9 19.5523 9 19V1C9 0.447715 9.44772 0 10 0Z"
+                      fill="white"
+                    ></path>
+                    </svg><span class="ml-[15px]">Reality</span>
+                </div>
+              </div>
+            </div>
+            <!--v-if-->
+          </div>
+          <!--Contact us-->
+          <div
+            class="mt-28 justify-center flex lg:flex-row flex-col mb-36 gap-5 lg:items-stretch items-center h-fit w-fit p-4"
+          >
+            <div
+              class="rounded-xl bgspaceodet text-white lg:w-1/2 justify-center items-center flex flex-col lg:text-left text-center"
+            >
+              <div
+                class="lg:justify-start lg:items-start items-center justify-center flex flex-col h-full xl:mt-36 xl:ml-36 xl:mr-20 lg:mt-24 lg:ml-24 lg:mr-16 mt-4 ml-10 mr-8"
+              >
+                <span
+                  class="tablet:text-5xl mobile:text-[32px] text-[20px] tablet:mt-0 mt-[20px] tablet:font-bold primaryfont font-extrabold"
+                  >Contact us</span
+                ><span class="mobile:mt-6 mt-1 tablet:text-[16px] text-[12px]"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                  dolorem asperiores corrupti mollitia adipisci.leniti
+                  praesentium modi, mollitia eius!</span
+                ><button
+                  class="bg-white primarycolor rounded-2xl xl:mt-24 lg:mt-12 tablet:mt-6 mt-[50px] p-4 xl:px-16 lg:px-10 px-[70px] mb-[40px] text-xl whitespace-nowrap flex flex-row w-fit tablet:justify-start justify-center text-center align-middle items-center font-semibold"
+                >
+                  Write us
+                  <svg
+                    class="ml-2 w-7 h-7"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.222 30.9889C25.396 30.9889 31.2116 25.1733 31.2116 17.9993C31.2116 10.8254 25.396 5.00977 18.222 5.00977C11.0481 5.00977 5.23242 10.8254 5.23242 17.9993C5.23242 25.1733 11.0481 30.9889 18.222 30.9889Z"
+                      stroke="#283454"
+                      stroke-width="2.16493"
+                      stroke-miterlimit="10"
+                    ></path>
+                    <path
+                      d="M16.5986 13.1289L22.011 18L16.5986 22.8711"
+                      stroke="#283454"
+                      stroke-width="2.16493"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="flex flex-row gap-5 grow lg:w-1/2 justify-center">
+              <div class="h-full w-auto">
+                <img src="images/images/image9.png" />
+              </div>
+              <div class="h-full w-auto">
+                <img src="images/images/image9.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="goToTheTopDiv"
+        class="sticky w-full justify-center bottom-2 flex z-50 pointer-events-none" style="visibility: hidden"
+      >
+        <div class="max-w-screen-2xl w-full flex justify-end -mt-40 -ml-[20px]">
+          <div class="absolute">
+            <div class="z-50 text-white lg:text-xl mobile:text-lg text-md">
+              <a
+                id="goToTheTop"
+                href="#"
+                class="rounded-3xl lg:p-7 mobile:p-6 p-4 bgblazeorange z-50 relative pointer-events-auto"
+                ><span class="lg:mr-20 mr-16">Go to the top</span>
+                <div
+                  class="absolute overflow-hidden lg:-mt-28 -mt-20 lg:left-28 mobile:left-28 left-28"
+                >
+                  <img
+                    class="rocketAnim"
+                    src="images/images/smallrocket.png"
+                  />
+                  <img
+                    class="absolute rocketAnim2"
+                    src="images/images/smallrocket.png"
+                  />
+                </div
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer
+        class="h-fit bg-gray-100 w-full justify-center flex p-4 pb-12 z-30"
+      >
+        <div
+          class="max-w-screen-2xl w-full flex sm:flex-row flex-col justify-start mt-8 whitespace-nowrap"
+        >
+          <div class="flex tablet:flex-row flex-col">
+            <!--v-if-->
+            <div class="flex flex-col text-sm">
+              <img
+                class="sm:w-[220px] w-[160px]"
+                src="images/images/logo.png"
+              /><span class="mt-14 font-bold">Amsterdam</span
+              ><span class="font-medium">Overhoeksplein 3</span
+              ><span class="mt-3 font-bold">Email</span
+              ><span class="font-medium">info@hubinit.eu</span
+              ><span class="mt-3 font-bold">Phone number</span
+              ><span class="font-medium">+31 (0) 6 38 67 28 78</span>
+              <div class="flex flex-row mt-4">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  class="mr-10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1090_4075)">
+                    <path
+                      d="M14 2.52109C17.7406 2.52109 18.1836 2.5375 19.6547 2.60312C21.0219 2.66328 21.7602 2.89297 22.2523 3.08438C22.9031 3.33594 23.3734 3.64219 23.8602 4.12891C24.3523 4.62109 24.6531 5.08594 24.9047 5.73672C25.0961 6.22891 25.3258 6.97266 25.3859 8.33437C25.4516 9.81094 25.468 10.2539 25.468 13.9891C25.468 17.7297 25.4516 18.1727 25.3859 19.6438C25.3258 21.0109 25.0961 21.7492 24.9047 22.2414C24.6531 22.8922 24.3469 23.3625 23.8602 23.8492C23.368 24.3414 22.9031 24.6422 22.2523 24.8938C21.7602 25.0852 21.0164 25.3148 19.6547 25.375C18.1781 25.4406 17.7352 25.457 14 25.457C10.2594 25.457 9.81641 25.4406 8.34531 25.375C6.97813 25.3148 6.23984 25.0852 5.74766 24.8938C5.09688 24.6422 4.62656 24.3359 4.13984 23.8492C3.64766 23.357 3.34687 22.8922 3.09531 22.2414C2.90391 21.7492 2.67422 21.0055 2.61406 19.6438C2.54844 18.1672 2.53203 17.7242 2.53203 13.9891C2.53203 10.2484 2.54844 9.80547 2.61406 8.33437C2.67422 6.96719 2.90391 6.22891 3.09531 5.73672C3.34687 5.08594 3.65312 4.61562 4.13984 4.12891C4.63203 3.63672 5.09688 3.33594 5.74766 3.08438C6.23984 2.89297 6.98359 2.66328 8.34531 2.60312C9.81641 2.5375 10.2594 2.52109 14 2.52109ZM14 0C10.1992 0 9.72344 0.0164062 8.23047 0.0820312C6.74297 0.147656 5.72031 0.388281 4.83438 0.732812C3.91016 1.09375 3.12813 1.56953 2.35156 2.35156C1.56953 3.12812 1.09375 3.91016 0.732812 4.82891C0.388281 5.72031 0.147656 6.7375 0.0820313 8.225C0.0164063 9.72344 0 10.1992 0 14C0 17.8008 0.0164063 18.2766 0.0820313 19.7695C0.147656 21.257 0.388281 22.2797 0.732812 23.1656C1.09375 24.0898 1.56953 24.8719 2.35156 25.6484C3.12813 26.425 3.91016 26.9062 4.82891 27.2617C5.72031 27.6062 6.7375 27.8469 8.225 27.9125C9.71797 27.9781 10.1937 27.9945 13.9945 27.9945C17.7953 27.9945 18.2711 27.9781 19.7641 27.9125C21.2516 27.8469 22.2742 27.6062 23.1602 27.2617C24.0789 26.9062 24.8609 26.425 25.6375 25.6484C26.4141 24.8719 26.8953 24.0898 27.2508 23.1711C27.5953 22.2797 27.8359 21.2625 27.9016 19.775C27.9672 18.282 27.9836 17.8063 27.9836 14.0055C27.9836 10.2047 27.9672 9.72891 27.9016 8.23594C27.8359 6.74844 27.5953 5.72578 27.2508 4.83984C26.9062 3.91016 26.4305 3.12812 25.6484 2.35156C24.8719 1.575 24.0898 1.09375 23.1711 0.738281C22.2797 0.39375 21.2625 0.153125 19.775 0.0875C18.2766 0.0164063 17.8008 0 14 0Z"
+                      fill="#283454"
+                    ></path>
+                    <path
+                      d="M14 6.80859C10.0297 6.80859 6.80859 10.0297 6.80859 14C6.80859 17.9703 10.0297 21.1914 14 21.1914C17.9703 21.1914 21.1914 17.9703 21.1914 14C21.1914 10.0297 17.9703 6.80859 14 6.80859ZM14 18.6648C11.4242 18.6648 9.33516 16.5758 9.33516 14C9.33516 11.4242 11.4242 9.33516 14 9.33516C16.5758 9.33516 18.6648 11.4242 18.6648 14C18.6648 16.5758 16.5758 18.6648 14 18.6648Z"
+                      fill="#283454"
+                    ></path>
+                    <path
+                      d="M23.1547 6.52461C23.1547 7.4543 22.4 8.20352 21.4758 8.20352C20.5461 8.20352 19.7969 7.44883 19.7969 6.52461C19.7969 5.59492 20.5516 4.8457 21.4758 4.8457C22.4 4.8457 23.1547 5.60039 23.1547 6.52461Z"
+                      fill="#283454"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1090_4075">
+                      <rect width="28" height="28" fill="white"></rect>
+                    </clipPath>
+                  </defs>
+                  </svg><svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M25.9273 0H2.06719C0.924219 0 0 0.902344 0 2.01797V25.9766C0 27.0922 0.924219 28 2.06719 28H25.9273C27.0703 28 28 27.0922 28 25.982V2.01797C28 0.902344 27.0703 0 25.9273 0ZM8.30703 23.8602H4.15078V10.4945H8.30703V23.8602ZM6.22891 8.67344C4.89453 8.67344 3.81719 7.59609 3.81719 6.26719C3.81719 4.93828 4.89453 3.86094 6.22891 3.86094C7.55781 3.86094 8.63516 4.93828 8.63516 6.26719C8.63516 7.59062 7.55781 8.67344 6.22891 8.67344ZM23.8602 23.8602H19.7094V17.3633C19.7094 15.8156 19.682 13.8195 17.5492 13.8195C15.3891 13.8195 15.0609 15.5094 15.0609 17.2539V23.8602H10.9156V10.4945H14.8969V12.3211H14.9516C15.5039 11.2711 16.8602 10.1609 18.8781 10.1609C23.0836 10.1609 23.8602 12.9281 23.8602 16.5266V23.8602Z"
+                    fill="#283454"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              class="flex flex-col text-lg font-semibold underline tablet:mt-32 mt-20 xl:ml-28 tablet:ml-10 whitespace-nowrap"
+            >
+              <span class="-mt-10">About us</span
+              ><span class="mt-5">Our teams</span
+              ><span class="mt-5">Work with us</span
+              ><span class="mt-5">Contact us</span>
+            </div>
+          </div>
+          <div
+            class="flex lg:flex-row flex-col w-full xl:ml-52 lg:ml-28 sm:ml-16 sm:mt-0 mt-16"
+          >
+            <div
+              class="lg:text-3xl lg:leading-normal md:text-2xl sm:text-xl text-[32px] font-bold lg:mt-16 tablet:mt-6 mt-3 whitespace-nowrap primaryfont"
+            >
+              Subscribe To Our<br />
+              Weekly <span class="accentcolor"> Newsletter</span>
+            </div>
+            <div
+              class="lg:mt-16 tablet:mt-2 mt-[40px] lg:ml-14 flex flex-col flex-grow text-gray-400 w-full"
+            >
+              <div class="flex tablet:flex-row flex-col">
+                <div
+                  class="bg-white flex-grow p-3 rounded-lg shadow-md tablet:mr-10"
+                >
+                  <span>Name</span>
+                </div>
+                <div
+                  class="bg-white flex-grow p-3 rounded-lg shadow-md xl:ml-10 tablet:mt-0 mt-7 tablet:mr-0"
+                >
+                  <span>Surname</span>
+                </div>
+              </div>
+              <div class="flex flex-row xl:mt-10 lg:mt-8 mt-7">
+                <div class="bg-white flex-grow p-3 rounded-lg shadow-md">
+                  <span>Company Email address</span>
+                </div>
+              </div>
+              <div class="flex flex-row xl:mt-12 lg:mt-10 tablet:mt-8 mt-7">
+                <button
+                  class="bgblazeorange flex-grow tablet:p-5 p-3 rounded-lg text-lg shadow-md text-white primaryfont"
+                >
+                  <span>Subscribe</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--v-if-->
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript" src="./owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="./js/gototop.js"></script>
+    <script type="text/javascript" src="./js/navbar.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+            items: 4
+        })
+      });
+    </script>
+  </body>
+</html>
