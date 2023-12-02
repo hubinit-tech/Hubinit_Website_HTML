@@ -187,3 +187,60 @@ body {
 		-webkit-transform: translateX(-100%);
 	}
 }
+
+
+/*-----------normal style-----------*/
+
+/* navegation bar */
+
+.navBar{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px 70px;
+}
+
+.logo{
+	width: 150px;
+}
+
+.links{
+	display: flex;
+	gap: 40px;
+}
+
+.btn-contactUs{
+	background-color: #101623;
+	padding: 13px 30px;
+	border-radius: 8px;
+	color: white;
+}
+
+
+/* header */
+
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 200px;
+}
+
+.text-button-container {
+	padding: 20px;
+}
+
+.bubble-container {
+	width: 500px;
+	height: 500px;
+	border-radius: 200px 100px 200px 150px;
+	overflow: hidden;
+	position: relative;
+	background: linear-gradient(45deg, #FFB6C1, #87CEFA);
+}
+
+.bubble-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
