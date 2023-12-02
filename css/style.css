@@ -145,14 +145,13 @@ body {
 	}
 }
 .cnnContents {
-	width: 100%;
-	padding-top: 20px;
+	width: 70%;
 	margin: 0 auto;
 	font-size: 30px;
 	white-space: nowrap;
 	text-transform: uppercase;
-	font-family: 'Museo';
 	font-weight: 300;
+	margin-top: 50px;
 }
 
 .marqueeStyle {
@@ -202,6 +201,7 @@ body {
 
 .logo{
 	width: 150px;
+	cursor: pointer;
 }
 
 .links{
@@ -219,28 +219,83 @@ body {
 
 /* header */
 
-.flex-container {
+.header-container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 40px 200px;
+	animation: fadeInLeft 1s ease-out;
 }
 
-.text-button-container {
+.text-header-container {
+	display: flex;
+	flex-direction: column;
+	gap: 45px;
+	align-items: flex-start;
 	padding: 20px;
+	width: 44%;
+}
+
+.text-header-container h1{
+	line-height: 80px;
+	font-size: 70px;
+	font-family: 'VisbyCF Heavy';
+}
+
+.header-text-color{
+	color: #FF6909;
+}
+
+.text-header-container button{
+	font-family: 'VisbyCF Bold';
+	color: white;
+	padding: 20px 60px;;
+	background-color: #FF6909;
+	border-radius: 10px;
 }
 
 .bubble-container {
-	width: 500px;
-	height: 500px;
-	border-radius: 200px 100px 200px 150px;
-	overflow: hidden;
-	position: relative;
-	background: linear-gradient(45deg, #FFB6C1, #87CEFA);
+    width: 606px;
+    height: 505px;
+    border-top-right-radius: 40%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 90%;
+    border-bottom-right-radius: 80%;
+    overflow: hidden;
+    background: linear-gradient(to right, #f3f3f3, white);
+    animation: fadeInRight 1s ease-out;
 }
 
 .bubble-image {
+	position: relative;
+	right: 100px;
+	top: 50px;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	transform: rotate(-10deg);
+}
+
+/* fadeInLeft animation */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-10px); /* Start from left */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Move to original position */
+    }
+}
+
+/* fadeInRight animation */
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px); /* Start from right */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Move to original position */
+    }
 }
