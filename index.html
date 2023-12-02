@@ -75,10 +75,22 @@
       </div>
     </div>
 
-    <video id="myVideo" muted controls>
-      <source src="./images/videos/video1.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+    <div style="position: relative;">
+      <video id="myVideo" muted controls>
+        <source src="./images/videos/video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    
+      <div id="overlay">
+        <div class="content-overlay">
+          <h2>Discover our world</h2>
+          <p>Lorem ipsum dolor sit amet consectetur. Consectetur mauris nulla tellus ultricies lobortis. 
+            Ornare sodales sit arcu nunc eu pellentesque. Purus elit tortor ornare.
+          </p>
+        </div>
+        <button onclick="resumeVideo()">Play</button>
+      </div>
+    </div>
 
     <script type="text/javascript" src="./owl-carousel/owl.carousel.js"></script>
     <script type="text/javascript" src="./js/gototop.js"></script>
