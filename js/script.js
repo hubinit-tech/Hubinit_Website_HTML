@@ -39,3 +39,22 @@ video.addEventListener("pause", updateOverlay);
 
 // Optionally, you can also trigger the check on page load
 playVideoIfVisible();
+
+
+// FEATURES SECTION LOGIC
+
+document.addEventListener("DOMContentLoaded", function () {
+  const featuresContainers = document.querySelectorAll(".features-container");
+
+  const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+          }
+      });
+  }, { threshold: 0.5 });
+
+  featuresContainers.forEach(container => {
+      observer.observe(container);
+  });
+});
