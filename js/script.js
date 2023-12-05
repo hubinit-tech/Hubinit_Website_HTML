@@ -58,3 +58,20 @@ document.addEventListener("DOMContentLoaded", function () {
       observer.observe(container);
   });
 });
+
+
+// SLIDER LOGIC
+
+let currentIndex = 0;
+const slides = document.querySelector('.slider');
+const totalSlides = slides.children.length;
+document.querySelector('.prev').style.display = 'none';
+
+function changeSlide(direction) {
+  currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+  const translateValue = -currentIndex * 30;
+  slides.style.transform = `translateX(${translateValue}%)`;
+
+  document.querySelector('.prev').style.display = currentIndex === 0 ? 'none' : 'block';
+  document.querySelector('.next').style.display = currentIndex === 5 ? 'none' : 'block';
+}
