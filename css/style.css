@@ -503,15 +503,14 @@ body {
 .process-main{
 	display: flex;
 	align-items: flex-start;
-	justify-content: center;
-	gap: 100px;
+	justify-content: space-around;
 	padding: 100px 0;
 }
 
 .process-info {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 50px;
     width: 30%;
 }
 
@@ -528,7 +527,7 @@ body {
     background-color: #00000054;
     position: absolute;
     left: 7%;
-	top: 50%;
+	top: 30%;
     transform: translateX(-50%);
 }
 
@@ -583,6 +582,18 @@ body {
 
 
 /* slider section */
+
+.slider-title{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.slider-title h2{
+	font-size: 50px;
+	color: black;
+	font-family: 'VisbyCF Bold';
+}
 
 .slider-container::before,
 .slider-container::after {
@@ -646,4 +657,134 @@ body {
 .next {
     right: 10px;
 	display: block;
+}
+
+.btn-caseStudies{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.btn-caseStudies button{
+	border-radius: 8px;
+	background: #FF6909;
+	color: white;
+	padding: 10px 40px;
+}
+
+
+/* latest highlight section */
+
+.highlights {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 40px;
+}
+
+.highlights-title{
+	font-size: 50px;
+	color: black;
+	font-family: 'VisbyCF Bold';
+	margin-top: 120px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.big-image {
+	position: relative;
+	overflow: hidden;
+	width: 80%;
+	height: 500px;
+	border-radius: 10px;
+}
+
+.big-image img {
+	width: 100%;
+	height: auto;
+	transition: transform 0.3s ease-in-out;
+}
+
+.big-image:hover img {
+	transform: scale(1.1);
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-end;
+	opacity: 1;
+	transition: opacity 0.3s ease-in-out;
+	padding: 50px;
+	cursor: pointer;
+}
+
+.overlay h2{
+	font-family: 'VisbyCF Bold';
+	font-size: 30px;
+	width: 50%;
+	margin-top: 10px;
+}
+
+.small-images {
+	display: flex;
+	justify-content: center;
+	width: 80%;
+	margin-bottom: 100px;
+}
+
+.small-image {
+	margin: 0 10px;
+	position: relative;
+	overflow: hidden;
+	width: 400px;
+	height: 250px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.small-textContainer{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.text-small{
+	margin-left: 10px;
+}
+
+.text-small h2{
+	font-family: 'VisbyCF Bold';
+	margin-top: 5px;
+}
+
+.small-image img {
+	width: 100%;
+	height: auto;
+	transition: transform 0.3s ease-in-out;
+}
+
+.small-image:hover img {
+	transform: scale(1.2);
+}
+
+.btn-allNews{
+	display: flex;
+	justify-content: center;
+}
+
+.btn-allNews button{
+	border-radius: 8px;
+	background: #FF6909;
+	color: white;
+	padding: 10px 40px;
 }
