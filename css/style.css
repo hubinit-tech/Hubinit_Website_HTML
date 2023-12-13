@@ -503,15 +503,14 @@ body {
 .process-main{
 	display: flex;
 	align-items: flex-start;
-	justify-content: center;
-	gap: 100px;
+	justify-content: space-around;
 	padding: 100px 0;
 }
 
 .process-info {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 50px;
     width: 30%;
 }
 
@@ -528,7 +527,7 @@ body {
     background-color: #00000054;
     position: absolute;
     left: 7%;
-	top: 50%;
+	top: 30%;
     transform: translateX(-50%);
 }
 
@@ -570,7 +569,7 @@ body {
 }
 
 .container-info:hover .info {
-    transform: scale(1.1); /* Zoom in effect on hover */
+    transform: scale(1.1);
 }
 
 .btn-discover {
@@ -579,4 +578,358 @@ body {
     color: white;
     border-radius: 5px;
     cursor: pointer;
+}
+
+
+/* slider section */
+
+.slider-title{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.slider-title h2{
+	font-size: 50px;
+	color: black;
+	font-family: 'VisbyCF Bold';
+}
+
+.slider-container::before,
+.slider-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5%;
+    z-index: 1;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.685));
+}
+
+.slider-container::before {
+    left: 0;
+}
+
+.slider-container::after {
+    right: 0;
+    transform: rotate(180deg);
+}
+
+
+.slider-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+	padding: 20px 50px;
+}
+
+.slider {
+    display: flex;
+	align-items: center;
+	justify-content: flex-start;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 30%;
+    height: auto;
+	margin-right: 20px;
+}
+
+.slider-container button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+	padding: 10px 20px;
+	border-radius: 5px;
+	background-color: white;
+    font-size: 24px;
+    cursor: pointer;
+	z-index: 5;
+}
+
+.prev {
+    left: 10px;
+	display: block;
+}
+
+.next {
+    right: 10px;
+	display: block;
+}
+
+.btn-caseStudies{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.btn-caseStudies button{
+	border-radius: 8px;
+	background: #FF6909;
+	color: white;
+	padding: 10px 40px;
+}
+
+
+/* latest highlight section */
+
+.highlights {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 40px;
+}
+
+.highlights-title{
+	font-size: 50px;
+	color: black;
+	font-family: 'VisbyCF Bold';
+	margin-top: 120px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.big-image {
+	position: relative;
+	overflow: hidden;
+	width: 80%;
+	height: 500px;
+	border-radius: 10px;
+}
+
+.big-image img {
+	width: 100%;
+	height: auto;
+	transition: transform 0.3s ease-in-out;
+}
+
+.big-image:hover img {
+	transform: scale(1.1);
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-end;
+	opacity: 1;
+	transition: opacity 0.3s ease-in-out;
+	padding: 50px;
+	cursor: pointer;
+}
+
+.overlay h2{
+	font-family: 'VisbyCF Bold';
+	font-size: 30px;
+	width: 50%;
+	margin-top: 10px;
+}
+
+.small-images {
+	display: flex;
+	justify-content: center;
+	width: 80%;
+	margin-bottom: 100px;
+}
+
+.small-image {
+	margin: 0 10px;
+	position: relative;
+	overflow: hidden;
+	width: 400px;
+	height: 250px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.small-textContainer{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.text-small{
+	margin-left: 10px;
+}
+
+.text-small h2{
+	font-family: 'VisbyCF Bold';
+	margin-top: 5px;
+}
+
+.small-image img {
+	width: 100%;
+	height: auto;
+	transition: transform 0.3s ease-in-out;
+}
+
+.small-image:hover img {
+	transform: scale(1.2);
+}
+
+.btn-allNews{
+	display: flex;
+	justify-content: center;
+}
+
+.btn-allNews button{
+	border-radius: 8px;
+	background: #FF6909;
+	color: white;
+	padding: 10px 40px;
+}
+
+
+/* let's connect section */
+
+.connect-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 100px;
+	gap: 20px;
+}
+
+.image-container img{
+	width: 800px;
+	border-radius: 15px;
+}
+
+.text-container {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	width: 30%;
+	gap: 50px;
+}
+
+.text-container h2{
+	font-family: 'VisbyCF Bold';
+	font-size: 50px;
+	color: black;
+}
+
+.text-container p{
+	line-height: 28px;
+}
+
+.text-container button{
+	border-radius: 8px;
+	background: #FF6909;
+	color: white;
+	padding: 10px 40px;
+}
+
+
+/* footer */
+
+/* left */
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #101623; /* Set your desired background color */
+	color: #fff; /* Set your desired text color */
+	padding: 80px 60px;
+}
+
+
+.left-container {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	width: 50%;
+}
+
+.left-container img{
+	width: 100px;
+}
+
+.separator {
+	width: 1px;
+	height: 120px;
+	background: rgba(255, 255, 255, 0.20);
+	margin: 0 30px;
+}
+
+.location{
+	display: flex;
+	gap: 100px;
+}
+
+.location h3{
+	font-family: 'VisbyCF Bold';
+	font-size: 20px;
+}
+
+/* right */
+
+.right-container {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+
+.follow-container {
+	display: flex;
+	align-items: center;
+}
+
+.follow-text {
+	margin-right: 10px;
+}
+
+.social-icons {
+	font-size: 24px;
+}
+
+.social-icons i {
+	margin-right: 10px;
+	color: #ffffff; 
+}
+
+.subscribe-container{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-bottom: 60px;
+}
+
+.input-container {
+	display: flex;
+	align-items: center;
+}
+
+.custom-input {
+	padding: 10px;
+	width: 300px;
+	border: 1px solid #ccc;
+	border-radius: 5px 0 0 5px;
+	color: black;
+}
+
+.custom-button {
+	padding: 10px 50px;
+	background: #FF6909;
+	color: white;
+	border: 1px solid #FF6909;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+}
+
+.nav-bottom{
+	display: flex;
+	gap: 20px;
 }
