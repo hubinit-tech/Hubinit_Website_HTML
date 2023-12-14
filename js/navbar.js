@@ -30,15 +30,6 @@ function onResize() {
   }
 }
 
-// Attach event listeners
-document.addEventListener('DOMContentLoaded', () => {
-  const mobileToggle = document.getElementById('mobile-toggle');
-  mobileToggle.addEventListener('click', toggleMobileNav);
-
-  window.addEventListener('resize', onResize);
-  onResize(); // Call it initially to set the initial state
-});
-
 
 // const blogMenu = document.getElementById('blog-menu');
 // const blogNav = document.getElementById('blog-nav');
