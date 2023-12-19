@@ -194,9 +194,9 @@ body {
 
 .navBar{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
-	padding: 20px 70px;
+	padding: 20px 100px;
 }
 
 .logo{
@@ -223,7 +223,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 40px 150px;
+	padding: 40px 80px;
 	animation: fadeInLeft 1s ease-out;
 }
 

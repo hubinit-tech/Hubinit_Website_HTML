@@ -18,9 +18,6 @@ function playVideoIfVisible() {
   let videoOffset = video.getBoundingClientRect().top;
   let windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
-  console.log("Video Offset:", videoOffset);
-  console.log("Window Height:", windowHeight);
-
   if (videoOffset <= 0) {
     video.play();
     window.removeEventListener("scroll", playVideoIfVisible);
@@ -47,15 +44,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const featuresContainers = document.querySelectorAll(".features-container");
 
   const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-          if (entry.isIntersecting) {
-              entry.target.classList.add("show");
-          }
-      });
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
   }, { threshold: 0.5 });
 
   featuresContainers.forEach(container => {
-      observer.observe(container);
+    observer.observe(container);
   });
 });
 
@@ -75,3 +72,5 @@ function changeSlide(direction) {
   document.querySelector('.prev').style.display = currentIndex === 0 ? 'none' : 'block';
   document.querySelector('.next').style.display = currentIndex === 5 ? 'none' : 'block';
 }
+
+

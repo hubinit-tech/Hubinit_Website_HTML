@@ -1,0 +1,242 @@
+/* navbar */
+
+.about-us-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+
+.about-us-link::after {
+    width: 100%;
+}
+
+.navBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.navBar a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 15px;
+}
+
+
+/* video */
+
+.videoContainer {
+    z-index: -1;
+}
+
+.btn-contactUs{
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.404);
+}
+
+
+/* founded section */
+
+.founded-container {
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F5F5;
+    color: black;
+    margin: 0 50px;
+    border-radius: 10px;
+    opacity: 1;
+
+}
+
+.founded-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: start;
+    gap: 80px;
+    padding: 50px;
+}
+
+.founded-img {
+    max-width: 15%;
+}
+
+.founded-content p {
+    color: #101623;
+    font-size: 20px;
+}
+
+
+/* our vision section */
+
+.ourVision-section{
+    display: flex;
+    flex-direction: column;
+    padding:  80px 50px;
+    text-align: center;
+    gap: 20px;
+}
+
+.ourVision-title{
+	font-family: 'VisbyCF Heavy';
+    font-size: 40px;
+    color: black;
+}
+
+.ourVision-info{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.ourVision-features{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+}
+
+.ourVision-featuresBox{
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    padding:  30px 9%;
+}
+
+.ourVision-featuresBox h3{
+    font-weight: bold;
+    font-size: 18px;
+    color: #101623;
+}
+
+.ourVision-infoBox{
+    padding: 30px;
+    text-align: start;
+    border: 1px solid rgba(16, 22, 35, 0.20);
+    border-radius: 10px;
+    height: 80%;
+}
+
+.ourVision-infoBox p{
+    margin-bottom: 20px;
+}
+
+
+/* illustration boxes */
+
+.illustration-section{
+    display: flex;
+    flex-direction: column;
+    padding: 80px 50px;
+    text-align: center;
+    gap: 20px;
+}
+
+.illustration {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.illustration-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 100px;
+    background-color: #F5F5F5;
+    width: 80%;
+    border-radius: 15px;
+    gap: 20px;
+}
+
+.illustration-box h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.illustration-box img {
+    width: 200px;
+}
+
+
+/* services section */
+
+.services-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 60%;
+    text-align: center;
+}
+
+.services-title h1{
+	font-family: 'VisbyCF Heavy';
+    font-size: 30px;
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 0;
+}
+
+.services-container{
+    display: flex;
+    padding: 20px 60px;
+    background-color: #F5F5F5;
+    gap: 50px;
+    align-items: center;
+}
+
+.no-background{
+    background-color: white;
+}
+
+.services-container img{
+    width: 70px;
+}
+
+.services-container h2{
+    width: 50%;
+}
+
+.services-btn{
+    padding: 12px 40px;
+    background-color: #FF6909;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* team section */
+
+.team-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.team-section h1{
+    font-size: 30px;
+    font-weight: bold;
+}
