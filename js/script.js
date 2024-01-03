@@ -73,4 +73,3 @@ function changeSlide(direction) {
   document.querySelector('.next').style.display = currentIndex === 5 ? 'none' : 'block';
 }
 
-

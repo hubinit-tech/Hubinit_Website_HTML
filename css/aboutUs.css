@@ -1,6 +1,6 @@
 /* navbar */
 
-.about-us-link::after {
+.link-underline-white::after {
     content: "";
     display: block;
     width: 0;
@@ -9,7 +9,7 @@
     transition: width 0.3s ease;
 }
 
-.about-us-link::after {
+.link-underline-white::after {
     width: 100%;
 }
 

@@ -1,0 +1,215 @@
+.bubble-image-services{
+    position: relative;
+	left: 60px;
+	top: 50px;
+	width: 70%;
+	height: 80%;
+	object-fit: cover;
+}
+
+.tech-talet-section{
+	display: flex;
+	padding: 50px 100px;
+	justify-content: space-between;
+	gap: 100px;
+}
+
+.tech-talet-section img{
+	width: 600px;
+	border-radius: 10px;
+}
+
+.tech-talet-info{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 50%;
+}
+
+.tech-talet-info h2{
+	font-family: 'VisbyCF Heavy';
+	font-size: 40px;
+	color: black;
+}
+
+.tech-talet-info p{
+	font-size: 20px;
+}
+
+
+/* our services section */
+
+.our-services-section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 80px 0;
+	gap: 40px;
+}
+
+.our-services-section h2{
+	font-family: 'VisbyCF Heavy';
+	font-size: 40px;
+	color: black;
+}
+
+.our-services-section p{
+	font-size: 20px;
+	width: 50%;
+	text-align: center;
+}
+
+.services{
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+	gap: 15px;
+}
+
+.services-group{
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+.box-services{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 350px;
+	height: 200px;
+	border: 1px solid rgba(0, 0, 0, 0.185);
+	border-radius: 10px;
+}
+
+.box-services h3{
+	font-family: 'VisbyCF Heavy';
+	font-size: 20px;
+	width: 70%;
+	text-align: center;
+}
+
+
+/* why hubinit section */
+
+.why-section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 80px 0;
+	gap: 40px;
+}
+
+.why-section h2{
+	font-family: 'VisbyCF Heavy';
+	font-size: 40px;
+	color: black;
+}
+
+.advantages{
+	display: flex;
+}
+
+.advantages-group{
+	display: flex;
+	flex-direction: column;
+	gap: 70px;
+}
+
+.advantages-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+}
+
+.advantages-text{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	width: 80%;
+	gap: 20px;
+}
+
+.advantages-text h3{
+	font-family: 'VisbyCF Bold';
+	font-size: 25px;
+	color: black;
+}
+
+.advantages-text p{
+	font-size: 20px;
+	text-align: center;
+}
+
+.advantages-box{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	height: 300px;
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+.advantages-box img{
+	width: 300px;
+}
+
+.rocket{
+	transform: rotate(20deg);
+}
+
+
+/* F.A.Q section */
+
+.faq-section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 70px 0;
+}
+
+.faq-section h2{
+	font-family: 'VisbyCF Heavy';
+	font-size: 40px;
+	color: black;
+}
+
+.faq-container {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin-top: 50px;
+}
+
+.faq-item {
+	border-top: 1px solid rgba(16, 22, 35, 0.20);;
+	padding: 5px 0;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.question {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #fff;
+}
+
+.question-text{
+	font-family: 'VisbyCF Bold';
+	font-size: 20px;
+}
+
+.toggle-btn{
+	font-size: 60px;
+}
+
+.answer {
+	padding: 10px;
+	background-color: #f9f9f9;
+	display: none;
+}
