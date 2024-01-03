@@ -275,15 +275,37 @@
         </ul>
       </div>
     </footer>
+
+    <button id="backToTop" class="back-to-top" onclick="scrollToTop()">
+      <span class="emoji">☝️</span>
+    </button>
     
     <script type="text/javascript" src="./owl-carousel/owl.carousel.js"></script>
     <script type="text/javascript" src="./js/script.js"></script>
     <script>
+      // Logic carousel
       $(document).ready(function () {
         $(".owl-carousel").owlCarousel({
             items: 4
         })
       });
+
+      // Logic for button back to top
+      let backToTopButton = document.getElementById('backToTop');
+      window.addEventListener('scroll', function() {
+        if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+          backToTopButton.style.display = 'block';
+        } else {
+          backToTopButton.style.display = 'none';
+        }
+      });
+
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }
     </script>
   </body>
 </html>
