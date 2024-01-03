@@ -290,8 +290,14 @@
       </div>
     </footer>
 
+    <button id="backToTop" class="back-to-top" onclick="scrollToTop()">
+      <span class="emoji">☝️</span>
+    </button>
+
     <script type="text/javascript" src="./owl-carousel/owl.carousel.js"></script>
     <script>
+
+      //Logic slider
       let currentIndex = 0;
       const slides = document.querySelector('.slider');
       const totalSlides = slides.children.length;
@@ -306,6 +312,7 @@
         document.querySelector('.next').style.display = currentIndex === 5 ? 'none' : 'block';
       }
 
+      //Function faq questions
       function toggleAnswer(index) {
         const answer = document.querySelector(`.faq-item:nth-child(${index}) .answer`);
         const toggleBtn = document.querySelector(`.faq-item:nth-child(${index}) .toggle-btn`);
@@ -317,6 +324,23 @@
           answer.style.display = 'none';
           toggleBtn.textContent = '+';
         }
+      }
+
+      // Logic for button back to top
+      let backToTopButton = document.getElementById('backToTop');
+      window.addEventListener('scroll', function() {
+        if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+          backToTopButton.style.display = 'block';
+        } else {
+          backToTopButton.style.display = 'none';
+        }
+      });
+
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
       }
     </script>
   </body>
