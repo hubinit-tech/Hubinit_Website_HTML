@@ -29,21 +29,3 @@ function onResize() {
       navbarMobile.style.display = 'flex';
   }
 }
-
-
-// const blogMenu = document.getElementById('blog-menu');
-// const blogNav = document.getElementById('blog-nav');
-// const openBlogNav = document.getElementById('openBlogNav');
-// const closeBlogNav = document.getElementById('closeBlogNav');
-
-// blogMenu.addEventListener('mouseenter', () => {
-//   blogNav.style.display = 'block'; // Show the navbar when hovering
-//   openBlogNav.style.display = 'none';
-//   closeBlogNav.style.display = 'block';
-// });
-
-// blogMenu.addEventListener('mouseleave', () => {
-//   blogNav.style.display = 'none'; // Hide the navbar when the mouse leaves the "Blog" link
-//   openBlogNav.style.display = 'block';
-//   closeBlogNav.style.display = 'none';
-// });

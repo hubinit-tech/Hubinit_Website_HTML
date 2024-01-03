@@ -28,7 +28,6 @@
 .navBar a {
     text-decoration: none;
     color: #ffffff;
-    margin: 0 15px;
 }
 
 
@@ -81,9 +80,9 @@
 .ourVision-section{
     display: flex;
     flex-direction: column;
-    padding:  80px 50px;
+    padding:  150px 50px;
     text-align: center;
-    gap: 20px;
+    gap: 50px;
 }
 
 .ourVision-title{

@@ -253,6 +253,7 @@ body {
 	line-height: 80px;
 	font-size: 70px;
 	font-family: 'VisbyCF Heavy';
+	color: #101623;
 }
 
 .text-header-container p{
@@ -266,7 +267,7 @@ body {
 .text-header-container button{
 	font-family: 'VisbyCF Bold';
 	color: white;
-	padding: 20px 60px;;
+	padding: 17px 50px;;
 	background-color: #FF6909;
 	border-radius: 10px;
 }
@@ -365,10 +366,11 @@ body {
 	transform: translate(-50%, -50%); 
 	background-color: #0000004a; 
 	color: white; 
-	padding: 10px 20px; 
+	padding: 20px 50px; 
 	cursor: pointer; 
-	border: none; 
+	border: none;
 	border-radius: 5px;
+	font-size: 25px;
 }
 
 .btn-container{
@@ -514,7 +516,6 @@ body {
 .process-title p{
 	width: 50%;
 	text-align: center;
-	font-weight: bold;
 }
 
 .process-main{
