@@ -1,0 +1,77 @@
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 80px;
+    gap: 50px;
+}
+
+.contact-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-section h2{
+    font-family: 'VisbyCF Heavy';
+	font-size: 40px;
+	color: black;
+}
+
+.contact-container{
+    display: flex;
+    gap: 50px;
+}
+
+
+/* form */
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form h3{
+    font-family: 'VisbyCF Bold';
+	font-size: 20px;
+	color: #101623;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input, textarea{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(16, 22, 35, 0.20);
+}
+
+.contact-form button{
+    font-family: 'VisbyCF Bold';
+	color: white;
+	padding: 10px 60px;;
+	background-color: #FF6909;
+	border-radius: 8px;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 80px 80px;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+}
+
+.contact-info h3{
+    font-family: 'VisbyCF Bold';
+	font-size: 20px;
+	color: #101623;
+}

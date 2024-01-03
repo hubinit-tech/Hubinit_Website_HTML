@@ -1,0 +1,55 @@
+.highlights-subtitle{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.highlights-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.highlights-btn button{
+    border-radius: 8px;
+	background: #FF6909;
+	color: white;
+	padding: 15px 50px;
+}
+
+/* newsletter section */
+
+.newsletter-section{
+    display: flex;
+    border-radius: 20px;
+    border: 1px solid rgba(16, 22, 35, 0.20);
+    padding: 50px 40px;
+    margin: 80px 50px;
+    justify-content: space-between;
+}
+
+.newsletter-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.newsletter-text h3{
+	font-family: 'VisbyCF Bold';
+    font-size: 30px;
+}
+
+
+/* upcoming events section */
+
+.event-title-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.event-title-container h2{
+	font-family: 'VisbyCF Heavy';
+    font-size: 50px;
+}
