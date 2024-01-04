@@ -90,6 +90,7 @@
     align-items: center;
     gap: 20px;
     padding: 50px;
+    margin-bottom: 50px;
 }
 
 .work-at-hubinit h2{
@@ -100,14 +101,15 @@
 
 .work-hubinit-info{
     display: flex;
-    gap: 20px;
 }
 
-.work-hubinit-container{
+.work-hubinit-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    max-width: 300px;
 }
 
 .work-hubinit-container h3{
@@ -116,18 +118,19 @@
 	color: black;
     text-align: center;
     width: 70%;
+    margin-top: 20px;
 }
 
-.work-hubinit-box{
+.work-hubinit-box {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 450px;
-    padding: 50px;
-    border-radius: 20px;
     border: 1px solid rgba(16, 22, 35, 0.20);
+    border-radius: 20px;
+    padding: 50px;
 }
 
-.work-hubinit-box img{
-    width: 250px;
+.work-hubinit-box img {
+    max-width: 100%;
+    height: auto;
 }

@@ -1,31 +1,32 @@
-// Function to toggle the mobile navigation
-function toggleMobileNav() {
-  const navbarCollapse = document.getElementById('navbar-collapse');
-  const icon1 = document.getElementById('icon1');
-  const icon2 = document.getElementById('icon2');
-  navbarCollapse.style.display = navbarCollapse.style.display === 'block' ? 'none' : 'block';
+function initializeMobileMenu() {
+  let mobileMenu = document.getElementById("mobileMenu");
+  mobileMenu.style.display = "none";
+}
+initializeMobileMenu();
 
-  if (navbarCollapse.style.display === 'block') {
-    icon1.style.display = 'none';
-    icon2.style.display = 'block';
+function toggleMobileMenu() {
+  let mobileMenu = document.getElementById("mobileMenu");
+  mobileMenu.style.display = mobileMenu.style.display === "flex" ? "none" : "flex";
+  
+  let menuIcon = document.querySelector(".menu-icon");
+  let closeIcon = document.querySelector(".close-icon");
+
+  if (mobileMenu.style.display === "flex") {
+    menuIcon.style.display = "none";
+    closeIcon.style.display = "block";
   } else {
-    icon1.style.display = 'block';
-    icon2.style.display = 'none';
+    menuIcon.style.display = "block";
+    closeIcon.style.display = "none";
   }
 }
 
+function closeMobileMenu() {
+  let mobileMenu = document.getElementById("mobileMenu");
+  mobileMenu.style.display = "none";
 
-// Function to handle responsive behavior
-function onResize() {
-  const windowWidth = window.innerWidth;
-  const navbarMain = document.getElementById('navbar-main');
-  const navbarMobile = document.getElementById('navbar-mobile');
-  
-  if (windowWidth >= 828) {
-      navbarMain.style.display = 'flex';
-      navbarMobile.style.display = 'none';
-  } else {
-      navbarMain.style.display = 'none';
-      navbarMobile.style.display = 'flex';
-  }
+  let menuIcon = document.querySelector(".menu-icon");
+  let closeIcon = document.querySelector(".close-icon");
+
+  menuIcon.style.display = "block";
+  closeIcon.style.display = "none";
 }
