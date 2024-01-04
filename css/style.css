@@ -144,6 +144,7 @@ body {
 		font-family: 'VisbyCF Bold';
 	}
 }
+
 .cnnContents {
 	width: 80%;
 	font-size: 30px;
@@ -190,45 +191,89 @@ body {
 
 /*-----------normal style-----------*/
 
-/* navegation bar */
+/* navigation bar */
 
-.navBar{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 20px 100px;
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
 }
 
-.logo{
-	width: 150px;
-	cursor: pointer;
+.logo {
+  width: 150px;
+  cursor: pointer;
 }
 
-.links{
-	display: flex;
-	gap: 40px;
+.links {
+  display: flex;
+  gap: 40px;
 }
 
-.btn-contactUs{
-	background-color: #101623;
-	padding: 13px 30px;
-	border-radius: 8px;
-	color: white;
+.btn-contactUs {
+  background-color: #FF6909;
+  padding: 13px 30px;
+  border-radius: 8px;
+  color: white;
 }
 
-.link-underline::after {
-    content: "";
+
+.mobile-menu-toggle {
+  display: none;
+}
+
+.menu-icon,
+.close-icon {
+  display: none;
+  width: 50px;
+  cursor: pointer;
+}
+
+/* navigation bar mobile */
+
+@media (max-width: 1000px) {
+  .links {
+    display: none;
+  }
+
+  .connect-btn {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .mobile-menu a {
+    margin-bottom: 15px;
+    color: #101623;
+    text-decoration: none;
+  }
+
+  .mobile-menu-toggle {
     display: block;
-    width: 0;
-    height: 2px;
-    background-color: #101623;
-    transition: width 0.3s ease;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .close-icon {
+    display: none;
+  }
 }
 
-.link-underline::after {
-    width: 100%;
-}
-
+  
 
 /* header */
 
@@ -520,7 +565,7 @@ body {
 
 .process-main{
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: space-around;
 	padding: 100px 0;
 }
@@ -1067,5 +1112,18 @@ footer {
 	}
 	60% {
 	transform: translateY(5px);
+	}
+}
+
+
+/* responsive */
+
+@media (max-width: 1000px) {
+	.header-container{
+		flex-direction: column-reverse;
+	}
+
+	.text-header-container{
+		width: 100%;
 	}
 }

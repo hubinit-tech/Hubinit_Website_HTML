@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
         entry.target.classList.add("show");
       }
     });
-  }, { threshold: 0.5 });
+  }, { threshold: 0.3 });
 
   featuresContainers.forEach(container => {
     observer.observe(container);

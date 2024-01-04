@@ -14,22 +14,35 @@
 
   <body class="bg-white h-full" style="visibility: visible">
     <nav class="navBar">
-      <div class="flex-shrink-0">
-        <a href="index.html">
+      <a href="index.html">
+        <div class="flex-shrink-0">
           <img src="images/images/logo.png" alt="Logo" class="logo">
-        </a>
-      </div>
-  
+        </div>
+      </a>
+    
       <div class="links">
         <a href="aboutus.html">About Us</a>
         <a href="ourservices.html">Our services</a>
         <a href="news.html">News</a>
-        <a href="careers.html" class="link-underline">Careers</a>
+        <a href="careers.html">Careers</a>
         <a href="contactus.html">Contact</a>
       </div>
-  
-      <div>
+    
+      <div class="connect-btn">
         <button class="btn-contactUs">Let's Connect</button>
+      </div>
+    
+      <div class="mobile-menu-toggle">
+        <img src="images/images/hamburger.png" alt="Menu" class="menu-icon" onclick="toggleMobileMenu()">
+        <img src="images/images/close.png" alt="Close" class="close-icon" onclick="closeMobileMenu()">
+      </div>
+    
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="aboutus.html">About Us</a>
+        <a href="ourservices.html">Our services</a>
+        <a href="news.html">News</a>
+        <a href="careers.html">Careers</a>
+        <a href="contactus.html">Contact</a>
       </div>
     </nav>
 
@@ -117,17 +130,17 @@
         </div>
 
         <div class="work-hubinit-container">
-          <div class="work-hubinit-box">
-            <img src="./images/images/ballon.png">
-          </div>
-          <h3>Professional growth and development</h3>
+            <div class="work-hubinit-box">
+              <img src="./images/images/ballon.png">
+            </div>
+            <h3>Professional growth and development</h3>
         </div>
-
+    
         <div class="work-hubinit-container">
-          <div class="work-hubinit-box">
-            <img src="./images/images/hands.png">
-          </div>
-          <h3>Community engagement and social responsibility</h3>
+            <div class="work-hubinit-box">
+                <img src="./images/images/hands.png">
+            </div>
+            <h3>Community engagement and social responsibility</h3>
         </div>
       </div>
     </div>
@@ -163,10 +176,10 @@
           <div class="follow-text">Follow us here:</div>
           <div class="social-icons">
             <a href="https://www.facebook.com/hubinit" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
-            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.instagram.com/hubinit.it.startup/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://www.linkedin.com/company/hubinit/mycompany/verification/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://www.tiktok.com/@ericburnik" target="_blank"> <i class="fa-brands fa-tiktok"></i></a>
-            <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.youtube.com/@hubinit1" target="_blank"><i class="fa-brands fa-youtube"></i></a>
           </div>
         </div>
 
@@ -191,15 +204,8 @@
       <span class="emoji">☝️</span>
     </button>
     
-    <script type="text/javascript" src="./owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="./js/navbar.js"></script>
     <script>
-      // Logic carousel
-      $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
-            items: 4
-        })
-      });
-
       // Logic for button back to top
       let backToTopButton = document.getElementById('backToTop');
       window.addEventListener('scroll', function() {
@@ -216,6 +222,26 @@
           behavior: 'smooth'
         });
       }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const featuresContainers = document.querySelectorAll(".work-hubinit-container");
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+              setTimeout(() => {
+                entry.target.classList.add("show");
+                const img = entry.target.querySelector(".work-hubinit-box img");
+                img.classList.add("show");
+              }, index * 200); // Adjust the delay duration as needed
+            }
+          });
+        }, { threshold: 0.5 });
+
+        featuresContainers.forEach((container) => {
+          observer.observe(container);
+        });
+      });
     </script>
   </body>
 </html>
