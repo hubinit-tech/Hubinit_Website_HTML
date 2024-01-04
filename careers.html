@@ -127,21 +127,21 @@
             <img src="./images/images/planet.png">
           </div>
           <h3>Multi-culture team</h3>
-      </div>
-  
-      <div class="work-hubinit-container">
-          <div class="work-hubinit-box">
-            <img src="./images/images/ballon.png">
-          </div>
-          <h3>Professional growth and development</h3>
-      </div>
-  
-      <div class="work-hubinit-container">
-          <div class="work-hubinit-box">
-              <img src="./images/images/hands.png">
-          </div>
-          <h3>Community engagement and social responsibility</h3>
-      </div>
+        </div>
+
+        <div class="work-hubinit-container">
+            <div class="work-hubinit-box">
+              <img src="./images/images/ballon.png">
+            </div>
+            <h3>Professional growth and development</h3>
+        </div>
+    
+        <div class="work-hubinit-container">
+            <div class="work-hubinit-box">
+                <img src="./images/images/hands.png">
+            </div>
+            <h3>Community engagement and social responsibility</h3>
+        </div>
       </div>
     </div>
 
@@ -222,6 +222,26 @@
           behavior: 'smooth'
         });
       }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const featuresContainers = document.querySelectorAll(".work-hubinit-container");
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+              setTimeout(() => {
+                entry.target.classList.add("show");
+                const img = entry.target.querySelector(".work-hubinit-box img");
+                img.classList.add("show");
+              }, index * 200); // Adjust the delay duration as needed
+            }
+          });
+        }, { threshold: 0.5 });
+
+        featuresContainers.forEach((container) => {
+          observer.observe(container);
+        });
+      });
     </script>
   </body>
 </html>
