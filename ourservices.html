@@ -22,14 +22,16 @@
     
       <div class="links">
         <a href="aboutus.html">About Us</a>
-        <a href="ourservices.html">Our services</a>
+        <a href="ourservices.html" class="link-underline">Our services</a>
         <a href="news.html">News</a>
         <a href="careers.html">Careers</a>
         <a href="contactus.html">Contact</a>
       </div>
     
       <div class="connect-btn">
-        <button class="btn-contactUs">Let's Connect</button>
+        <a href="contactus.html">
+          <button class="btn-contactUs">Let's Connect</button>
+        </a>
       </div>
     
       <div class="mobile-menu-toggle">
@@ -39,7 +41,7 @@
     
       <div class="mobile-menu" id="mobileMenu">
         <a href="aboutus.html">About Us</a>
-        <a href="ourservices.html">Our services</a>
+        <a href="ourservices.html" class="link-underline">Our services</a>
         <a href="news.html">News</a>
         <a href="careers.html">Careers</a>
         <a href="contactus.html">Contact</a>
@@ -51,7 +53,9 @@
         <div class="text-header-container">
           <h1><span class="header-text-color">Empowering Your Vision: </span>Seamless Solutions on Demand</h1>
           <p>Discover how our on-demand teams-as-a-service provider can help you achieve your tech-driven goals.</p>
-          <button>Let's Work</button>
+          <a href="contactus.html">
+            <button>Let's Work</button>
+          </a>
         </div>
 
         <div class="bubble-container">
@@ -177,62 +181,93 @@
       <p>Understand hubinit better!</p>
 
       <div class="faq-container">
-        <div class="faq-item" onclick="toggleAnswer(1)">
-          <div class="question">
-            <span class="question-text">What does hubinit do?</span>
-            <span class="toggle-btn">+</span>
+        <div class="faq-group">
+          <div class="faq-item" onclick="toggleAnswer(1)">
+            <div class="question">
+              <span class="question-text">What does hubinit do?</span>
+              <span class="toggle-btn">+</span>
+            </div>
+            <div class="answer">The team of experts is passionate about utilizing technology 
+              to help businesses grow and succeed. We offer a range of services that include 
+              software development, web design, cybersecurity, and IT consulting. By combining 
+              our expertise in these areas, we are able to deliver customized solutions that meet 
+              the unique needs of our clients.</div>
           </div>
-          <div class="answer">Answer 1 goes here.</div>
+      
+          <div class="faq-item" onclick="toggleAnswer(2)">
+            <div class="question">
+              <span class="question-text">Can hubinit Provide Ongoing Support After A Project Is Completed?</span>
+              <span class="toggle-btn">+</span>
+            </div>
+            <div class="answer">Yes, we offer ongoing support and maintenance to ensure that our 
+              solutions continue to meet our clients’ needs. We provide timely updates, bug fixes, 
+              and other support services as needed.</div>
+          </div>
+      
+          <div class="faq-item" onclick="toggleAnswer(3)">
+            <div class="question">
+              <span class="question-text">How Do I Know If hubinit's Services Are Right For My Business?</span>
+              <span class="toggle-btn">+</span>
+            </div>
+            <div class="answer">We work closely with our clients to understand their unique needs and 
+              develop customized solutions that meet those needs. We offer a free consultation to help 
+              you determine if our services are the right fit for your business.</div>
+          </div>
+  
+          <div class="faq-item" onclick="toggleAnswer(4)">
+            <div class="question">
+              <span class="question-text">How Does hubinit Ensure The Security Of My Data?</span>
+              <span class="toggle-btn">+</span>
+            </div>
+            <div class="answer">Hubinit follows industry-standard security practices and protocols to 
+               ensure the security of our clients’ data. We use advanced cybersecurity measures to protect
+               your data from unauthorized access and maintain strict confidentiality of all client 
+               information.</div>
+          </div>
         </div>
-    
-        <div class="faq-item" onclick="toggleAnswer(2)">
-          <div class="question">
-            <span class="question-text">Can hubinit Provide Ongoing Support After A Project Is Completed?</span>
-            <span class="toggle-btn">+</span>
+     
+        <div class="faq-group">
+          <div class="faq-item" onclick="toggleAnswer(5)">
+            <div class="question">
+              <span class="question-text">What Is hubinit's Process For Software Development?</span>
+              <span class="toggle-btn">+</span>
+            </div>
+            <div class="answer">Our software development process is a comprehensive, step-by-step approach
+               that includes planning, design, development, testing, and deployment. We work closely 
+               with our clients to ensure that our solutions meet their specific needs.</div>
           </div>
-          <div class="answer">Answer 2 goes here.</div>
-        </div>
-    
-        <div class="faq-item" onclick="toggleAnswer(3)">
-          <div class="question">
-            <span class="question-text">How Do I Know If hubinit's Services Are Right For My Business?</span>
-            <span class="toggle-btn">+</span>
+  
+          <div class="faq-item" onclick="toggleAnswer(6)">
+            <div class="question">
+              <span class="question-text">What Makes hubinit's Services Different From Other IT Service Providers?</span>
+              <span class="toggle-btn">+</span>
+            </div>
+            <div class="answer">Our services are tailored to each client’s unique needs, and we are committed 
+              to delivering the highest level of service and expertise. We utilize the latest technologies 
+              and industry best practices to ensure that our solutions are effective, efficient, and meet 
+              our clients’ specific needs.</div>
           </div>
-          <div class="answer">Answer 3 goes here.</div>
+  
+          <div class="faq-item" onclick="toggleAnswer(7)">
+            <div class="question">
+              <span class="question-text">How Much Do hubinit's Services Cost?</span>
+              <span class="toggle-btn">+</span>
+            </div>
+            <div class="answer">The cost of our services varies depending on the specific needs of each 
+              client. We offer competitive pricing and work with our clients to create customized 
+              solutions that fit their budget. Contact us for a free consultation to discuss your 
+              specific needs and get a quote for our services.</div>
+          </div>
+  
+          <div class="faq-item" onclick="toggleAnswer(8)">
+            <div class="question">
+              <span class="question-text">Why TaaS/ Team as Service?</span>
+              <span class="toggle-btn">+</span>
+            </div>
+            <div class="answer">Key Unique Aspects-cost saving, speed, Ease of customization, and quality results.</div>
+          </div>
         </div>
 
-        <div class="faq-item" onclick="toggleAnswer(4)">
-          <div class="question">
-            <span class="question-text">How Does hubinit Ensure The Security Of My Data?</span>
-            <span class="toggle-btn">+</span>
-          </div>
-          <div class="answer">Answer 4 goes here.</div>
-        </div>
-
-        <div class="faq-item" onclick="toggleAnswer(5)">
-          <div class="question">
-            <span class="question-text">What Is hubinit's Process For Software Development?</span>
-            <span class="toggle-btn">+</span>
-          </div>
-          <div class="answer">Answer 5 goes here.</div>
-        </div>
-
-        <div class="faq-item" onclick="toggleAnswer(6)">
-          <div class="question">
-            <span class="question-text">What Makes hubinit's Services Different From Other IT Service Providers?</span>
-            <span class="toggle-btn">+</span>
-          </div>
-          <div class="answer">Answer 6 goes here.</div>
-        </div>
-
-        <div class="faq-item" onclick="toggleAnswer(7)">
-          <div class="question">
-            <span class="question-text">How Much Do hubinit's Services Cost?</span>
-            <span class="toggle-btn">+</span>
-          </div>
-          <div class="answer">Answer 7 goes here.</div>
-        </div>
-    
       </div>
     </div>
 
@@ -241,10 +276,12 @@
         <h2>Let's Connect!</h2>
         <p>Have inquiries or suggestions? Reach out to us in just a click. Our team is here to assist you. 
           Your success journey starts with a simple message.</p>
-        <button>Write us</button>
+        <a href="contactus.html">
+          <button>Write us</button>
+        </a>
       </div>
-      <div class="image-container">
-        <img src="./images/images/connect-img.jpg" alt="connect img">
+      <div class="team-image">
+        <img src="./images/images/team.png" alt="connect img">
       </div>
     </div>
 

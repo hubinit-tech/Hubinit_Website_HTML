@@ -217,7 +217,6 @@ body {
   color: white;
 }
 
-
 .mobile-menu-toggle {
   display: none;
 }
@@ -273,7 +272,18 @@ body {
   }
 }
 
-  
+.link-underline::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #101623;
+    transition: width 0.3s ease;
+}
+
+.link-underline::after {
+    width: 100%;
+}
 
 /* header */
 
@@ -430,6 +440,7 @@ body {
 	border-radius: 5px;
 	border: 1px solid rgba(0, 0, 0, 0.322);
 	font-weight: 800;
+	text-align: center;
 }
 
 
@@ -929,11 +940,13 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	padding: 100px;
-	gap: 20px;
 }
 
-.image-container img{
-	width: 800px;
+.team-image{
+	width: 60%;
+}
+
+.team-image img{
 	border-radius: 15px;
 }
 
