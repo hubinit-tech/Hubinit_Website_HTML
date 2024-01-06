@@ -192,7 +192,7 @@
 
       <div class="faq-container">
         <div class="faq-group">
-          <div class="faq-item" onclick="toggleAnswer(1)">
+          <div class="faq-item">
             <div class="question">
               <span class="question-text">What does hubinit do?</span>
               <span class="toggle-btn">+</span>
@@ -204,7 +204,7 @@
               the unique needs of our clients.</div>
           </div>
       
-          <div class="faq-item" onclick="toggleAnswer(2)">
+          <div class="faq-item">
             <div class="question">
               <span class="question-text">Can hubinit Provide Ongoing Support After A Project Is Completed?</span>
               <span class="toggle-btn">+</span>
@@ -214,7 +214,7 @@
               and other support services as needed.</div>
           </div>
       
-          <div class="faq-item" onclick="toggleAnswer(3)">
+          <div class="faq-item">
             <div class="question">
               <span class="question-text">How Do I Know If hubinit's Services Are Right For My Business?</span>
               <span class="toggle-btn">+</span>
@@ -224,7 +224,7 @@
               you determine if our services are the right fit for your business.</div>
           </div>
   
-          <div class="faq-item" onclick="toggleAnswer(4)">
+          <div class="faq-item">
             <div class="question">
               <span class="question-text">How Does hubinit Ensure The Security Of My Data?</span>
               <span class="toggle-btn">+</span>
@@ -237,7 +237,7 @@
         </div>
      
         <div class="faq-group">
-          <div class="faq-item" onclick="toggleAnswer(5)">
+          <div class="faq-item">
             <div class="question">
               <span class="question-text">What Is hubinit's Process For Software Development?</span>
               <span class="toggle-btn">+</span>
@@ -247,7 +247,7 @@
                with our clients to ensure that our solutions meet their specific needs.</div>
           </div>
   
-          <div class="faq-item" onclick="toggleAnswer(6)">
+          <div class="faq-item">
             <div class="question">
               <span class="question-text">What Makes hubinit's Services Different From Other IT Service Providers?</span>
               <span class="toggle-btn">+</span>
@@ -258,7 +258,7 @@
               our clients’ specific needs.</div>
           </div>
   
-          <div class="faq-item" onclick="toggleAnswer(7)">
+          <div class="faq-item">
             <div class="question">
               <span class="question-text">How Much Do hubinit's Services Cost?</span>
               <span class="toggle-btn">+</span>
@@ -269,7 +269,7 @@
               specific needs and get a quote for our services.</div>
           </div>
   
-          <div class="faq-item" onclick="toggleAnswer(8)">
+          <div class="faq-item">
             <div class="question">
               <span class="question-text">Why TaaS/ Team as Service?</span>
               <span class="toggle-btn">+</span>
@@ -372,18 +372,18 @@
       }
 
       //Function faq questions
-      function toggleAnswer(index) {
-        const answer = document.querySelector(`.faq-item:nth-child(${index}) .answer`);
-        const toggleBtn = document.querySelector(`.faq-item:nth-child(${index}) .toggle-btn`);
+      // function toggleAnswer(index) {
+      //   const answer = document.querySelector(`.faq-item:nth-child(${index}) .answer`);
+      //   const toggleBtn = document.querySelector(`.faq-item:nth-child(${index}) .toggle-btn`);
 
-        if (answer.style.display === 'none' || answer.style.display === '') {
-          answer.style.display = 'block';
-          toggleBtn.textContent = '-';
-        } else {
-          answer.style.display = 'none';
-          toggleBtn.textContent = '+';
-        }
-      }
+      //   if (answer.style.display === 'none' || answer.style.display === '') {
+      //     answer.style.display = 'block';
+      //     toggleBtn.textContent = '-';
+      //   } else {
+      //     answer.style.display = 'none';
+      //     toggleBtn.textContent = '+';
+      //   }
+      // }
 
       // Logic for button back to top
       let backToTopButton = document.getElementById('backToTop');
