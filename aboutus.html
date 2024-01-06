@@ -326,6 +326,28 @@
           behavior: 'smooth'
         });
       }
+
+      // Logic for fadeIn bottom illustration containers
+      document.addEventListener('DOMContentLoaded', function () {
+        const illustrationBoxes = document.querySelectorAll('.illustration-box');
+
+        function fadeInBoxes() {
+          illustrationBoxes.forEach(box => {
+            const boxTop = box.getBoundingClientRect().top;
+            const screenHeight = window.innerHeight;
+
+            if (boxTop < screenHeight) {
+              box.style.opacity = 1;
+              box.style.transform = 'translateY(0)';
+            }
+          });
+        }
+
+        window.addEventListener('scroll', fadeInBoxes);
+        window.addEventListener('resize', fadeInBoxes);
+
+        fadeInBoxes();
+      });
     </script>
   </body>
 </html>
