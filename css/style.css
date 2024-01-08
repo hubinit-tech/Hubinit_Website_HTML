@@ -705,7 +705,7 @@ body {
     transition: transform 0.5s ease-in-out;
 }
 
-.slider img {
+.slider-img {
     width: 30%;
     height: auto;
 	margin-right: 20px;
@@ -1025,7 +1025,6 @@ footer {
 	flex-direction: column;
 	gap: 30px;
 }
-
 
 .follow-container {
 	display: flex;

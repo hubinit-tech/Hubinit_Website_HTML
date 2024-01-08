@@ -242,3 +242,56 @@
     font-size: 30px;
     font-weight: bold;
 }
+
+.slider-team-container{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 50px;
+}
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.slide-player{
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+}
+
+.slide-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #10162333;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.slider-team-img{
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.flag {
+    margin-top: 5px;
+    max-width: 30px;
+    height: auto;
+}
+
+.slide-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.slide-icon{
+    font-size: 30px;
+}
