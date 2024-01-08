@@ -239,7 +239,8 @@
 }
 
 .team-section h1{
-    font-size: 30px;
+    font-family: 'VisbyCF Heavy';
+    font-size: 35px;
     font-weight: bold;
 }
 
@@ -290,8 +291,31 @@
     text-align: center;
     margin-top: 20px;
     gap: 20px;
+    padding: 0 30px;
+}
+
+.slide-title h2{
+    font-family: 'VisbyCF Heavy';
+    font-size: 25px;
+}
+
+.slide-title h3{
+    font-family: 'VisbyCF Bold';
+    font-size: 18px;
 }
 
 .slide-icon{
     font-size: 30px;
+}
+
+.slider-team-btn{
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+	padding: 10px 20px;
+	border-radius: 5px;
+	background-color: white;
+    font-size: 24px;
+    cursor: pointer;
+	z-index: 5;
 }
