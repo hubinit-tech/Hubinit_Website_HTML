@@ -1,6 +1,16 @@
+.news-title{
+    font-size: 50px;
+	color: black;
+	font-family: 'VisbyCF Heavy';
+	margin-top: 50px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
 .highlights-subtitle{
     text-align: center;
     margin-bottom: 50px;
+    font-size: 20px;
 }
 
 .highlights-btn{

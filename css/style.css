@@ -472,29 +472,37 @@ body {
     border-top-left-radius: 70%;
 	border-bottom-left-radius: 50%;
     border-bottom-right-radius: 70%;
+	height: 300px;
     overflow: hidden;
     background: linear-gradient(to bottom, #f3f3f3, white);
 }
 
-.booble-features img {
-    width: 100%;
+.rocket-img{
+	position: relative;
+	top: 30px;
+	right: 20px;
+	transform: rotate(10deg);
+	animation: shake 1.5s ease-in-out infinite;
+	width: 90%;
     height: auto;
 }
 
-.rocket-img{
+.man-img {	
 	position: relative;
-	top: 30;
-	right: 50;
-	transform: rotate(10deg);
-	animation: shake 1.5s ease-in-out infinite;
-}
-
-.man-img {
+	bottom: 30px;
+	right: 30px;
+    max-width: 350px;
+    height: auto;
     animation: rotateInfinite 8s linear infinite;
 }
 
 .robot-img {
-    animation: bounce 4s ease-in-out infinite;
+	position: relative;
+	top: 50px;
+	right: 50px;
+    max-width: 400px;
+    height: auto;
+	animation: bounce 2.5s ease-in-out infinite; 
 }
 
 .features-container h2 {
@@ -514,10 +522,10 @@ body {
 
 @keyframes bounce {
     0%, 100% {
-        transform: translateY(10px);
+        transform: translateY(0);
     }
     50% {
-        transform: translateY(-10px);
+        transform: translateY(-20px);
     }
 }
 
@@ -823,7 +831,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	gap: 40px;
+	gap: 30px;
 }
 
 .highlights-title{
@@ -839,7 +847,7 @@ body {
 	position: relative;
 	overflow: hidden;
 	width: 80%;
-	height: 500px;
+	height: 400px;
 	border-radius: 10px;
 }
 
@@ -890,7 +898,7 @@ body {
 	position: relative;
 	overflow: hidden;
 	width: 400px;
-	height: 250px;
+	height: 230px;
 	border-radius: 10px;
 	cursor: pointer;
 }
