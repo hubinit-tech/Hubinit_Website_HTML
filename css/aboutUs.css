@@ -80,7 +80,7 @@
 .ourVision-section{
     display: flex;
     flex-direction: column;
-    padding:  150px 50px;
+    padding:  70px 50px;
     text-align: center;
     gap: 50px;
 }
