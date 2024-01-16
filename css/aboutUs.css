@@ -42,6 +42,40 @@
     border: 1px solid rgba(255, 255, 255, 0.404);
 }
 
+.title-video-about{
+    position: absolute; 
+	top: 20%; 
+	left: 50%; 
+	transform: translate(-50%, -50%);
+	font-family: 'VisbyCF Heavy';
+	color: white;
+	font-size: 50px;
+}
+
+.content-overlay-about{
+    position: absolute;
+	bottom: 100px;
+	left: 50px;
+	width: 40%;
+}
+
+.eric-video{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.eric-video h3{
+	font-family: 'VisbyCF Bold';
+	color: white;
+	font-size: 30px;
+}
+
+.eric-video img{
+    width: 10%;
+    height: 5%;
+}
 
 /* founded section */
 
