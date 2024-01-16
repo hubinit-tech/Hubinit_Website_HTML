@@ -18,14 +18,14 @@
     <nav class="navBar">
       <a href="index.html">
         <div class="flex-shrink-0">
-          <img src="images/images/logo.png" alt="Logo" class="logo">
+          <img src="images/images/logo-white.png" alt="Logo" class="logo">
         </div>
       </a>
     
       <div class="links">
         <a href="aboutus.html" class="link-underline-white">About Us</a>
         <a href="ourservices.html">Our services</a>
-        <a href="news.html">News</a>
+        <a href="news.html">Media</a>
         <a href="careers.html">Careers</a>
         <a href="contactus.html">Contact</a>
       </div>
@@ -44,7 +44,7 @@
       <div class="mobile-menu" id="mobileMenu">
         <a href="aboutus.html" class="link-underline">About Us</a>
         <a href="ourservices.html">Our services</a>
-        <a href="news.html">News</a>
+        <a href="news.html">Media</a>
         <a href="careers.html">Careers</a>
         <a href="contactus.html">Contact</a>
       </div>
@@ -67,7 +67,7 @@
       </div>
     </div>
 
-    <div
+    <!-- <div
       class="flex relative cnnContents w-full text-lg text-gray-600 justify-around mobile:mt-24 overflow-hidden"
     >
       <div class="flex flex-row w-full justify-around marqueeStyle">
@@ -90,7 +90,7 @@
           src="images/images/microsoft.png"
         /><img src="images/images/cisco.png" />
       </div>
-    </div>
+    </div> -->
 
     <div class="founded-container">
       <div class="founded-content">
@@ -163,7 +163,7 @@
         </div>
     
         <div class="illustration-box">
-          <img src="./images/images/illustration4.png" alt="Image 4">
+          <img src="./images/images/illustration4.png" style="margin-bottom: 50px;" alt="Image 4">
           <h2>We Take It Step-By-Step</h2>
           <p>We take a step-by-step approach to achieve long-term success for our clients. </p>
         </div>
@@ -172,7 +172,7 @@
 
     <div class="services-section">
       <div class="services-title">
-        <h1>What Makes Us Unique</h1>
+        <h1>What Makes Us <span style="color: #FF6909;">Unique</span></h1>
         <p>At hubinit, we offer a comprehensive suite of services designed to redefine 
           how businesses access and leverage top-tier tech talent.</p>
       </div>
@@ -209,6 +209,32 @@
     <div class="team-section">
 
       <h1>Meet Our Team</h1>
+
+      <div class="team-categories">
+        <div class="container-categories selected" onclick="selectCategory(this)">
+          <h3>Our Core</h3>
+        </div>
+    
+        <div class="container-categories" onclick="selectCategory(this)">
+          <h3>Business Development</h3>
+        </div>
+    
+        <div class="container-categories" onclick="selectCategory(this)">
+          <h3>Management</h3>
+        </div>
+    
+        <div class="container-categories" onclick="selectCategory(this)">
+          <h3>Designers</h3>
+        </div>
+    
+        <div class="container-categories" onclick="selectCategory(this)">
+          <h3>Developers</h3>
+        </div>
+    
+        <div class="container-categories" onclick="selectCategory(this)">
+          <h3>HR</h3>
+        </div>
+      </div>
 
       <div class="slider-container">
         <div class="slider">
@@ -250,7 +276,7 @@
             <div class="slide-info">
               <div class="slide-title">
                 <h2>Eva Fieira</h2>
-                <h3>inance Team Lead</h3>
+                <h3>Operation manager</h3>
               </div>
               <p>Optimizes workflows, manages resources, and ensures seamless operations.</p>
               <a href="https://www.linkedin.com/in/eva-fieira/" target="_blank"><i class="fa-brands fa-linkedin slide-icon"></i></a>
@@ -402,8 +428,10 @@
 
         <ul class="nav-bottom">
           <li><a href="index.html">Home</a></li>
-          <li><a href="aboutus.html">About</a></li>
-          <li><a href="ourservices.html">Services</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="ourservices.html">Our services</a></li>
+          <li><a href="news.html">Media</a></li>
+          <li><a href="careers.html">Careers</a></li>
           <li><a href="contactus.html">Contact</a></li>
         </ul>
       </div>
@@ -462,6 +490,21 @@
 
         fadeInBoxes();
       });
+
+      // Function to handle category selection
+      function selectCategory(element) {
+        // Remove 'selected' class from all elements
+        let categories = document.querySelectorAll('.container-categories');
+        categories.forEach(function (category) {
+            category.classList.remove('selected');
+        });
+
+        // Add 'selected' class to the clicked element
+        element.classList.add('selected');
+      }
+
+      // Set 'Our Core' as the default selected category
+      selectCategory(document.querySelector('.container-categories:first-child'));
     </script>
   </body>
 </html>
