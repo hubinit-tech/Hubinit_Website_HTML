@@ -50,10 +50,9 @@
     justify-content: center;
     background-color: #F5F5F5;
     color: black;
-    margin: 0 50px;
+    margin: 70px 80px;
     border-radius: 10px;
     opacity: 1;
-
 }
 
 .founded-content {
@@ -80,7 +79,7 @@
 .ourVision-section{
     display: flex;
     flex-direction: column;
-    padding:  70px 50px;
+    padding:  40px 80px;
     text-align: center;
     gap: 50px;
 }
@@ -134,7 +133,7 @@
 .illustration-section{
     display: flex;
     flex-direction: column;
-    padding: 80px 50px;
+    padding: 80px 80px;
     text-align: center;
     gap: 20px;
 }
@@ -150,8 +149,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 50px 100px;
+    justify-content: flex-end;
+    padding: 20px 100px;
     background-color: #F5F5F5;
     width: 80%;
     border-radius: 15px;
@@ -167,7 +166,7 @@
 }
 
 .illustration-box img {
-    width: 200px;
+    width: 170px;
 }
 
 
@@ -177,6 +176,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 50px 0;
 }
 
 .services-title{
@@ -196,6 +196,7 @@
 .services{
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 20px;
     padding: 50px 0;
 }
@@ -220,6 +221,10 @@
     width: 50%;
 }
 
+.services-container p{
+    width: 100%;
+}
+
 .services-btn{
     padding: 12px 40px;
     background-color: #FF6909;
@@ -235,13 +240,38 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 0;
+    margin-top: 100px;
 }
 
 .team-section h1{
     font-family: 'VisbyCF Heavy';
     font-size: 35px;
     font-weight: bold;
+}
+
+.team-categories{
+    display: flex;
+    padding: 30px 0;
+    gap: 20px;
+}
+
+.container-categories{
+    border-radius: 10px;
+    border: 1px solid rgba(16, 22, 35, 0.20);
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
+.container-categories h3{
+    font-family: 'VisbyCF Bold';
+}
+
+.container-categories.selected {
+    background-color: #101623;
+}
+
+.container-categories.selected h3 {
+    color: white;
 }
 
 .slider-team-container{

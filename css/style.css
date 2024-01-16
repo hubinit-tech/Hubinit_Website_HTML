@@ -293,6 +293,7 @@ body {
 	align-items: center;
 	padding: 40px 80px;
 	animation: fadeInLeft 1s ease-out;
+	height: 90vh;
 }
 
 .text-header-container {
@@ -450,12 +451,14 @@ body {
 	display: flex;
 	justify-content: space-around;
 	padding: 80px 20px;
-	align-items: center;
+	align-items: flex-end;
 }
 
 .features-container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
     width: 300px;
-    margin: 10px;
     text-align: center;
 	opacity: 0;
     transform: translateX(-50px);
@@ -502,7 +505,7 @@ body {
 	right: 50px;
     max-width: 400px;
     height: auto;
-	animation: bounce 2.5s ease-in-out infinite; 
+	animation: bounce 4s infinite ease-in-out; 
 }
 
 .features-container h2 {
@@ -522,11 +525,11 @@ body {
 
 @keyframes bounce {
     0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
+		transform: translateY(10px);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
 }
 
 @keyframes shake {
@@ -832,6 +835,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	gap: 30px;
+	margin-bottom: 60px;
 }
 
 .highlights-title{
@@ -888,17 +892,16 @@ body {
 
 .small-images {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	width: 80%;
-	margin-bottom: 100px;
+	height: 300px;
+	gap: 20px;
 }
 
 .small-image {
-	margin: 0 10px;
 	position: relative;
 	overflow: hidden;
-	width: 400px;
-	height: 230px;
+	width: 100%;
 	border-radius: 10px;
 	cursor: pointer;
 }
@@ -963,7 +966,7 @@ body {
 	align-items: flex-start;
 	flex-direction: column;
 	width: 30%;
-	gap: 50px;
+	gap: 30px;
 }
 
 .text-container h2{

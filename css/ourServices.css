@@ -140,14 +140,14 @@
 .advantages-group{
 	display: flex;
 	flex-direction: column;
-	gap: 70px;
+	gap: 40px;
 }
 
 .advantages-container{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 40px;
+	gap: 20px;
 }
 
 .advantages-text{
@@ -181,7 +181,7 @@
 }
 
 .advantages-box img{
-	width: 300px;
+	width: 200px;
 }
 
 .rocket{
@@ -208,7 +208,7 @@
 .faq-container {
 	display: flex;
 	flex-direction: column;
-	width: 80%;
+	width: 90%;
 	margin-top: 50px;
 }
 
@@ -220,7 +220,7 @@
 
 .faq-item {
 	position: relative;
-	padding: 20px;
+	padding: 20px 0;
 	overflow: hidden;
 	border-radius: 20px;
 	width: 48%;
@@ -247,6 +247,7 @@
 .answer {
 	display: none;
 	margin-top: 10px;
+	padding: 0 20px;
 }
 
 .faq-item .toggle-btn {

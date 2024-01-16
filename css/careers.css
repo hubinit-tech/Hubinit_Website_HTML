@@ -100,6 +100,7 @@
 
 .work-hubinit-info{
     display: flex;
+    gap: 20px;
 }
 
 .work-hubinit-container {
@@ -108,7 +109,7 @@
     align-items: center;
     padding: 10px;
     box-sizing: border-box;
-    max-width: 300px;
+    max-width: 400px;
     opacity: 0;
     transform: translateX(-20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
@@ -134,7 +135,7 @@
     align-items: center;
     border: 1px solid rgba(16, 22, 35, 0.20);
     border-radius: 20px;
-    padding: 50px;
+    padding: 30px;
 }
 
 .work-hubinit-box img {
@@ -148,4 +149,46 @@
 .work-hubinit-box img.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+.img-planet {
+    animation: rotate 6s infinite linear;
+}
+
+.img-balloon {
+    animation: float 3s infinite ease-in-out;
+}
+
+.img-hands {
+    animation: bounce 2s infinite ease-in-out;
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+    transform: translateY(0);
+    }
+    50% {
+    transform: translateY(-10px);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25%, 75% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
 }
