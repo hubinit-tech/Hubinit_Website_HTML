@@ -1,3 +1,7 @@
+.highlights-section{
+    display: block;
+}
+
 .news-title{
     font-size: 50px;
 	color: black;
@@ -62,4 +66,119 @@
 .event-title-container h2{
 	font-family: 'VisbyCF Heavy';
     font-size: 50px;
+}
+
+
+/* blog */
+
+.blog-container {
+    display: none;
+    padding: 50px;
+}
+
+.blog-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-title h1{
+    font-family: 'VisbyCF Heavy';
+    font-size: 50px;
+    text-align: center;
+    width: 55%;
+}
+
+.trends{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(16, 22, 35, 0.20);
+}
+
+.big-image-blog{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.big-image-blog img{
+    width: 100%;
+}
+
+.blog-container p,
+.blog-container ul{
+    font-size: 20px;
+}
+
+.author-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.author{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.author img{
+    width: 100px;
+}
+
+.author-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.author-share{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.author-share i{
+    font-size: 30px;
+}
+
+.author-share button{
+    border-radius: 8px;
+	background: #FF6909;
+	color: white;
+	padding: 15px 50px;
+    margin-left: 20px;
+}
+
+h4{
+    font-family: 'VisbyCF Heavy';
+}
+
+.other-blogs-title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.other-blogs-title h1{
+    font-family: 'VisbyCF Heavy';
+    font-size: 40px;
+}
+
+.small-images-blog{
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    gap: 20px;
+}
+
+.blog-info-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.blog-info-img img{
+    width: 30%;
 }
