@@ -765,6 +765,10 @@ body {
 	flex-direction: column;
 }
 
+.hidden{
+	display: none;
+}
+
 .event-section {
 	position: relative;
 	background-color: #101623;
