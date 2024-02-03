@@ -72,7 +72,7 @@
 /* blog */
 
 .blog-container {
-    display: none;
+    display: flex;
     padding: 50px;
 }
 
