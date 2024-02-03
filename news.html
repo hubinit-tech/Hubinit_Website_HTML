@@ -53,7 +53,7 @@
       <p class="highlights-subtitle">Explore our latest highlights</p>
 
       <div class="highlights">
-        <div class="big-image">
+        <div class="big-image" id="blogImage1">
           <img src="./images/images/blog/outsourcing.png">
           <div class="overlay">
             <p>23 Nov 2023</p>
@@ -63,7 +63,7 @@
         
         <div class="small-images">
           <div class="small-textContainer">
-            <div class="small-image">
+            <div class="small-image" id="blogImage2">
               <img src="./images/images/blog/changers.png">
             </div>
             <div class="text-small">
@@ -73,7 +73,7 @@
           </div>
 
           <div class="small-textContainer">
-            <div class="small-image">
+            <div class="small-image" id="blogImage3">
               <img src="./images/images/blog/AI.png">
             </div>
             <div class="text-small">
@@ -83,7 +83,7 @@
           </div>
 
           <div class="small-textContainer">
-            <div class="small-image">
+            <div class="small-image" id="blogImage4">
               <img src="./images/images/blog/companies.png">
             </div>
             <div class="text-small">
@@ -100,7 +100,7 @@
     </div>
 
     <div class="blog-container" id="blogContainer">
-
+      
       <div id="blog1" style="display: none;">
         <div class="blog-title">
           <h3><span style="font-weight: bold;">Jul 2023</span> / 3 min to read</h3>
@@ -554,50 +554,42 @@
     
     <script type="text/javascript" src="./js/navbar.js"></script>
     <script>
-      let currentBlogIndex = 0;
-      
-      function showAllNews() {
-        // Hide the highlights-section
+
+      document.getElementById('blogImage1').addEventListener('click', function() {
+        // Hide all blogs
+        document.getElementById('blog1').style.display = 'block';
+        document.getElementById('blog2').style.display = 'none';
+        document.getElementById('blog3').style.display = 'none';
+
         document.querySelector('.highlights-section').style.display = 'none';
         document.querySelector('.newsletter-section').style.display = 'none';
         document.querySelector('.event-section').style.display = 'none';
         document.querySelector('.event-title-container').style.display = 'none';
+      });
 
-        // Display the first blog
-        displayBlog();
-      }
-
-      function displayBlog() {
-        const blogContainer = document.getElementById('blogContainer');
+      document.getElementById('blogImage2').addEventListener('click', function() {
+        // Hide all blogs
         document.getElementById('blog1').style.display = 'none';
-        document.getElementById('blog2').style.display = 'none';
+        document.getElementById('blog2').style.display = 'block';
         document.getElementById('blog3').style.display = 'none';
 
-        // Display the current blog based on its index
-        switch (currentBlogIndex) {
-          case 0:
-            document.getElementById('blog1').style.display = 'block';
-            break;
-          case 1:
-            document.getElementById('blog2').style.display = 'block';
-            break;
-          case 2:
-            document.getElementById('blog3').style.display = 'block';
-            break;
-        }
+        document.querySelector('.highlights-section').style.display = 'none';
+        document.querySelector('.newsletter-section').style.display = 'none';
+        document.querySelector('.event-section').style.display = 'none';
+        document.querySelector('.event-title-container').style.display = 'none';
+      });
 
-        blogContainer.style.display = 'block';
-      }
+      document.getElementById('blogImage3').addEventListener('click', function() {
+        // Hide all blogs
+        document.getElementById('blog1').style.display = 'none';
+        document.getElementById('blog2').style.display = 'none';
+        document.getElementById('blog3').style.display = 'block';
 
-      function nextBlog() {
-        currentBlogIndex++;
-
-        if (currentBlogIndex < 3) {
-          displayBlog();
-        } else {
-          currentBlogIndex = 0;
-        }
-      }
+        document.querySelector('.highlights-section').style.display = 'none';
+        document.querySelector('.newsletter-section').style.display = 'none';
+        document.querySelector('.event-section').style.display = 'none';
+        document.querySelector('.event-title-container').style.display = 'none';
+      });
 
       // Logic for button back to top
       let backToTopButton = document.getElementById('backToTop');
